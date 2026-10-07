@@ -1,0 +1,684 @@
+.repository-content {
+    width: 100%;
+  }
+  
+  .repo-heading-row {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  
+    gap: 20px;
+  }
+  
+  .repo-heading-row h1 {
+    margin-top: 7px;
+  
+    font-size: 34px;
+    letter-spacing: -1px;
+  }
+  
+  .repo-description {
+    margin-top: 10px;
+  
+    max-width: 760px;
+  
+    color: #858b98;
+  
+    font-size: 14px;
+    line-height: 1.6;
+  }
+  
+  /* =========================
+     STATS
+     ========================= */
+  
+  .stats-grid {
+    margin-top: 26px;
+  
+    display: grid;
+  
+    grid-template-columns:
+      repeat(4, minmax(0, 1fr));
+  
+    gap: 14px;
+  }
+  
+  .stat-card {
+    min-height: 96px;
+  
+    padding: 20px;
+  
+    display: flex;
+    align-items: center;
+  
+    gap: 14px;
+  
+    border: 1px solid #1f232d;
+    border-radius: 13px;
+  
+    background: #0e1117;
+  
+    transition:
+      transform 0.2s ease,
+      border-color 0.2s ease,
+      background 0.2s ease;
+  }
+  
+  .stat-card:hover {
+    transform: translateY(-2px);
+  
+    border-color:
+      rgba(117, 87, 255, 0.3);
+  
+    background: #10141b;
+  }
+  
+  .stat-icon {
+    width: 43px;
+    height: 43px;
+  
+    flex-shrink: 0;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    border-radius: 10px;
+  
+    color: #8e7cff;
+  
+    background:
+      rgba(117, 87, 255, 0.1);
+  }
+  
+  .stat-card p {
+    color: #777c89;
+  
+    font-size: 11px;
+  }
+  
+  .stat-card h3 {
+    margin-top: 4px;
+  
+    font-size: 23px;
+  }
+  
+  /* =========================
+     MAIN PANELS
+     ========================= */
+  
+  .repo-content-grid {
+    margin-top: 16px;
+  
+    display: grid;
+  
+    grid-template-columns:
+      minmax(0, 1.4fr)
+      minmax(0, 1fr);
+  
+    gap: 16px;
+  }
+  
+  .repo-panel,
+  .quick-actions-panel {
+    min-width: 0;
+  
+    padding: 24px;
+  
+    border: 1px solid #1f232d;
+    border-radius: 14px;
+  
+    background: #0e1117;
+  }
+  
+  .panel-heading h2,
+  .quick-actions-panel h2 {
+    margin-top: 6px;
+  
+    font-size: 20px;
+  }
+  
+  .summary-list {
+    margin-top: 22px;
+  
+    display: grid;
+  
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr));
+  
+    gap: 12px;
+  }
+  
+  .summary-list div {
+    min-width: 0;
+  
+    padding: 13px;
+  
+    display: flex;
+    flex-direction: column;
+  
+    gap: 5px;
+  
+    border: 1px solid #242832;
+    border-radius: 9px;
+  
+    background: #11141b;
+  }
+  
+  .summary-list span {
+    color: #6f7480;
+  
+    font-size: 10px;
+  }
+  
+  .summary-list strong {
+    overflow: hidden;
+  
+    color: #d8dbe3;
+  
+    font-size: 12px;
+  
+    text-overflow: ellipsis;
+  }
+  
+  /* =========================
+     LANGUAGES
+     ========================= */
+  
+  .language-bars {
+    margin-top: 24px;
+  
+    display: flex;
+    flex-direction: column;
+  
+    gap: 16px;
+  }
+  
+  .language-title {
+    margin-bottom: 7px;
+  
+    display: flex;
+    justify-content: space-between;
+  
+    gap: 15px;
+  
+    color: #838895;
+  
+    font-size: 10px;
+  }
+  
+  .bar {
+    height: 6px;
+  
+    overflow: hidden;
+  
+    border-radius: 999px;
+  
+    background: #1a1e27;
+  }
+  
+  .bar div {
+    height: 100%;
+  
+    border-radius: inherit;
+  
+    background:
+      linear-gradient(
+        90deg,
+        #7658ff,
+        #4f8dff
+      );
+  }
+  
+  /* =========================
+     QUICK ACTIONS
+     ========================= */
+  
+  .quick-actions-panel {
+    margin-top: 16px;
+  }
+  
+  .action-grid {
+    margin-top: 18px;
+  
+    display: grid;
+  
+    grid-template-columns:
+      repeat(3, minmax(0, 1fr));
+  
+    gap: 12px;
+  }
+  
+  .action-grid button {
+    min-width: 0;
+  
+    padding: 18px;
+  
+    display: flex;
+    align-items: flex-start;
+  
+    gap: 12px;
+  
+    text-align: left;
+  
+    border: 1px solid #242832;
+    border-radius: 11px;
+  
+    color: #ffffff;
+  
+    background: #11141a;
+  
+    cursor: pointer;
+  
+    transition: 0.2s ease;
+  }
+  
+  .action-grid button:hover {
+    transform: translateY(-2px);
+  
+    border-color:
+      rgba(117, 87, 255, 0.5);
+  
+    background: #151822;
+  }
+  
+  .action-grid button svg {
+    flex-shrink: 0;
+  
+    color: #8f7eff;
+  }
+  
+  .action-grid button div {
+    min-width: 0;
+  
+    display: flex;
+    flex-direction: column;
+  
+    gap: 4px;
+  }
+  
+  .action-grid strong {
+    font-size: 12px;
+  }
+  
+  .action-grid span {
+    color: #737986;
+  
+    font-size: 10px;
+    line-height: 1.45;
+  }
+  
+  /* =========================
+     PENDING STATE
+     ========================= */
+  
+  .pending-stat-card h3 {
+    color: #777e8a;
+  }
+  
+  .pending-stat-card > div:last-child {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .pending-stat-card > div:last-child > span {
+    margin-top: 2px;
+  
+    color: #4f5561;
+  
+    font-size: 8px;
+  }
+  
+  .pending-content {
+    margin-top: 20px;
+  
+    min-height: 150px;
+  
+    padding: 24px;
+  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  
+    text-align: center;
+  
+    border: 1px dashed #282d38;
+    border-radius: 11px;
+  
+    background:
+      rgba(255, 255, 255, 0.01);
+  }
+  
+  .pending-icon {
+    width: 45px;
+    height: 45px;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    border-radius: 10px;
+  
+    color: #8e7dff;
+  
+    background:
+      rgba(117, 87, 255, 0.08);
+  }
+  
+  .pending-content h3 {
+    margin-top: 13px;
+  
+    font-size: 14px;
+  }
+  
+  .pending-content p {
+    margin-top: 7px;
+  
+    max-width: 470px;
+  
+    color: #707784;
+  
+    font-size: 10px;
+    line-height: 1.6;
+  }
+  
+  .pending-content p strong {
+    color: #a99aff;
+  
+    font-weight: 500;
+  }
+  
+  .pending-value {
+    color: #666d79 !important;
+  }
+  
+  .technology-empty-state {
+    margin-top: 20px;
+  
+    padding: 20px;
+  
+    border: 1px dashed #282d38;
+    border-radius: 11px;
+  
+    background:
+      rgba(255, 255, 255, 0.01);
+  }
+  
+  .technology-placeholder-row {
+    display: flex;
+    flex-wrap: wrap;
+  
+    gap: 7px;
+  }
+  
+  .technology-placeholder-row span {
+    width: 55px;
+    height: 24px;
+  
+    border-radius: 6px;
+  
+    background: #171b22;
+  }
+  
+  .technology-placeholder-row span:nth-child(2) {
+    width: 70px;
+  }
+  
+  .technology-placeholder-row span:nth-child(3) {
+    width: 48px;
+  }
+  
+  .technology-empty-state p {
+    margin-top: 15px;
+  
+    color: #666d79;
+  
+    font-size: 10px;
+    line-height: 1.55;
+  }
+  
+  .pending-bar div {
+    width: 0 !important;
+  }
+  
+  .quick-actions-description {
+    margin-top: 7px;
+  
+    color: #6e7581;
+  
+    font-size: 10px;
+  }
+  
+  /* =========================
+     LOADING
+     ========================= */
+  
+  .repo-loading {
+    margin-top: 24px;
+  
+    min-height: 130px;
+  
+    padding: 24px;
+  
+    display: flex;
+    align-items: center;
+  
+    gap: 16px;
+  
+    border: 1px solid #1f232d;
+    border-radius: 13px;
+  
+    background: #0e1117;
+  }
+  
+  .repo-loading-spinner {
+    width: 35px;
+    height: 35px;
+  
+    flex-shrink: 0;
+  
+    border: 3px solid #222731;
+    border-top-color: #8069ff;
+  
+    border-radius: 50%;
+  
+    animation:
+      repoSpin
+      0.8s linear infinite;
+  }
+  
+  @keyframes repoSpin {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .repo-loading > div:last-child {
+    display: flex;
+    flex-direction: column;
+  
+    gap: 5px;
+  }
+  
+  .repo-loading strong {
+    font-size: 13px;
+  }
+  
+  .repo-loading span {
+    color: #6e7480;
+  
+    font-size: 10px;
+  }
+  
+  /* =========================
+     RESPONSIVE
+     ========================= */
+  
+  @media (max-width: 1100px) {
+    .stats-grid {
+      grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+    }
+  
+    .repo-content-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  @media (max-width: 800px) {
+    .repo-heading-row h1 {
+      font-size: 29px;
+    }
+  
+    .repo-description {
+      font-size: 13px;
+    }
+  
+    .action-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  @media (max-width: 560px) {
+    .stats-grid {
+      grid-template-columns: 1fr;
+    }
+  
+    .stat-card {
+      min-height: 86px;
+  
+      padding: 16px;
+    }
+  
+    .repo-panel,
+    .quick-actions-panel {
+      padding: 18px;
+    }
+  
+    .summary-list {
+      grid-template-columns: 1fr;
+    }
+  
+    .pending-content {
+      padding: 20px 15px;
+    }
+  
+    .repo-heading-row h1 {
+      font-size: 26px;
+    }
+  }
+
+  .overview-highlights {
+    width: 100%;
+    margin-top: 18px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+  }
+  
+  .overview-highlight-chip {
+    padding: 7px 10px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #2a303b;
+    border-radius: 8px;
+    color: #c5baff;
+    background:
+      rgba(117, 87, 255, 0.07);
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 1.3;
+    white-space: nowrap;
+  }
+  
+  .overview-highlight-chip:hover {
+    border-color:
+      rgba(117, 87, 255, 0.45);
+    background:
+      rgba(117, 87, 255, 0.1);
+  }
+
+  .repository-intelligence {
+    padding-left: 26px;
+    padding-right: 26px;
+  }
+  
+  .overview-text {
+    width: 100%;
+    max-width: 760px;
+    margin-top: 12px;
+  }
+  
+  .overview-text p {
+    margin: 0;
+    color: #8b919d;
+    font-size: 12px;
+    line-height: 1.75;
+    text-align: center;
+  }
+  
+  .overview-text p + p {
+    margin-top: 12px;
+  }
+  
+  .overview-text strong {
+    color: #b4a8ff;
+    font-weight: 500;
+  }
+  
+  .overview-highlights {
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+  }
+  
+  .overview-highlight-chip {
+    max-width: 100%;
+    padding: 7px 10px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border:
+      1px solid #2a303b;
+    border-radius: 8px;
+    color: #c5baff;
+    background:
+      rgba(117, 87, 255, 0.07);
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 1.35;
+    text-align: center;
+    white-space: normal;
+    overflow-wrap: anywhere;
+    transition: 0.18s ease;
+  }
+  
+  .overview-highlight-chip:hover {
+    border-color:
+      rgba(117, 87, 255, 0.45);
+    background:
+      rgba(117, 87, 255, 0.11);
+  }
+  
+  @media (max-width: 700px) {
+    .repository-intelligence {
+      padding-left: 18px;
+      padding-right: 18px;
+    }
+  
+    .overview-text p {
+      font-size: 11px;
+      text-align: left;
+    }
+  
+    .overview-highlights {
+      justify-content: flex-start;
+    }
+  }

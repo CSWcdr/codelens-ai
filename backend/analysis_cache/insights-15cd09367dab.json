@@ -1,0 +1,276 @@
+{
+  "schema_version": 2,
+  "analysis_engine_version": "2.3",
+  "owner": "CSWcdr",
+  "repo_name": "Quick-AI",
+  "analysis_type": "insights",
+  "commit_sha": "a8a1375dfb6e7f95bf5eaf9a6f5af9575ea10fbd",
+  "created_at": "2026-10-06T10:50:22.626031+00:00",
+  "data": {
+    "architecture": "Client-Server",
+    "summary": {
+      "source_files": 34,
+      "analyzed_source_files": 34,
+      "file_metric_scope": "analyzed_source_files",
+      "frontend_files": 24,
+      "backend_files": 10,
+      "shared_files": 0,
+      "total_imports": 38,
+      "external_dependencies": 26,
+      "external_api_calls": 3,
+      "data_connections": 1,
+      "data_technology_count": 1,
+      "data_technologies": [
+        "PostgreSQL"
+      ],
+      "node_types": {
+        "configuration": 5,
+        "entry": 3,
+        "source": 2,
+        "component": 9,
+        "page": 10,
+        "controller": 2,
+        "middleware": 1,
+        "api": 2
+      }
+    },
+    "route_coverage": {
+      "frontend_requests": 9,
+      "backend_routes": 10,
+      "matched_requests": 9,
+      "unmatched_requests": 0,
+      "coverage_percentage": 100.0,
+      "coverage_status": "complete"
+    },
+    "largest_files": [
+      {
+        "path": "server/controllers/aiController.js",
+        "language": "JavaScript",
+        "node_type": "controller",
+        "layer": "backend",
+        "lines": 396,
+        "imports": 1,
+        "imported_by": 1
+      },
+      {
+        "path": "client/src/assets/assets.js",
+        "language": "JavaScript",
+        "node_type": "source",
+        "layer": "frontend",
+        "lines": 173,
+        "imports": 0,
+        "imported_by": 8
+      },
+      {
+        "path": "client/src/pages/WriteArticle.jsx",
+        "language": "JavaScript",
+        "node_type": "page",
+        "layer": "frontend",
+        "lines": 149,
+        "imports": 0,
+        "imported_by": 1
+      },
+      {
+        "path": "client/src/pages/GenerateImages.jsx",
+        "language": "JavaScript",
+        "node_type": "page",
+        "layer": "frontend",
+        "lines": 121,
+        "imports": 0,
+        "imported_by": 1
+      },
+      {
+        "path": "client/src/pages/Community.jsx",
+        "language": "JavaScript",
+        "node_type": "page",
+        "layer": "frontend",
+        "lines": 105,
+        "imports": 1,
+        "imported_by": 1
+      },
+      {
+        "path": "client/src/pages/BlogTitles.jsx",
+        "language": "JavaScript",
+        "node_type": "page",
+        "layer": "frontend",
+        "lines": 101,
+        "imports": 0,
+        "imported_by": 1
+      },
+      {
+        "path": "client/src/pages/RemoveObject.jsx",
+        "language": "JavaScript",
+        "node_type": "page",
+        "layer": "frontend",
+        "lines": 101,
+        "imports": 0,
+        "imported_by": 1
+      },
+      {
+        "path": "client/src/pages/ReviewResume.jsx",
+        "language": "JavaScript",
+        "node_type": "page",
+        "layer": "frontend",
+        "lines": 93,
+        "imports": 0,
+        "imported_by": 1
+      }
+    ],
+    "most_imported_files": [
+      {
+        "path": "client/src/assets/assets.js",
+        "reason": "Referenced by multiple repository source files.",
+        "value": 8,
+        "metric": "imported_by"
+      },
+      {
+        "path": "server/configs/db.js",
+        "reason": "Referenced by multiple repository source files.",
+        "value": 2,
+        "metric": "imported_by"
+      },
+      {
+        "path": "server/middlewares/auth.js",
+        "reason": "Referenced by multiple repository source files.",
+        "value": 2,
+        "metric": "imported_by"
+      },
+      {
+        "path": "client/src/App.jsx",
+        "reason": "Referenced by multiple repository source files.",
+        "value": 1,
+        "metric": "imported_by"
+      },
+      {
+        "path": "client/src/components/AiTools.jsx",
+        "reason": "Referenced by multiple repository source files.",
+        "value": 1,
+        "metric": "imported_by"
+      },
+      {
+        "path": "client/src/components/CreationItem.jsx",
+        "reason": "Referenced by multiple repository source files.",
+        "value": 1,
+        "metric": "imported_by"
+      },
+      {
+        "path": "client/src/components/Footer.jsx",
+        "reason": "Referenced by multiple repository source files.",
+        "value": 1,
+        "metric": "imported_by"
+      },
+      {
+        "path": "client/src/components/Hero.jsx",
+        "reason": "Referenced by multiple repository source files.",
+        "value": 1,
+        "metric": "imported_by"
+      }
+    ],
+    "highest_outgoing_imports": [
+      {
+        "path": "client/src/App.jsx",
+        "reason": "Imports several internal repository modules.",
+        "value": 10,
+        "metric": "imports"
+      },
+      {
+        "path": "client/src/pages/Home.jsx",
+        "reason": "Imports several internal repository modules.",
+        "value": 6,
+        "metric": "imports"
+      },
+      {
+        "path": "client/src/pages/Dashboard.jsx",
+        "reason": "Imports several internal repository modules.",
+        "value": 3,
+        "metric": "imports"
+      },
+      {
+        "path": "server/routes/aiRoutes.js",
+        "reason": "Imports several internal repository modules.",
+        "value": 3,
+        "metric": "imports"
+      },
+      {
+        "path": "server/server.js",
+        "reason": "Imports several internal repository modules.",
+        "value": 3,
+        "metric": "imports"
+      },
+      {
+        "path": "client/src/pages/Layout.jsx",
+        "reason": "Imports several internal repository modules.",
+        "value": 2,
+        "metric": "imports"
+      },
+      {
+        "path": "server/routes/userRoutes.js",
+        "reason": "Imports several internal repository modules.",
+        "value": 2,
+        "metric": "imports"
+      },
+      {
+        "path": "client/src/components/AiTools.jsx",
+        "reason": "Imports several internal repository modules.",
+        "value": 1,
+        "metric": "imports"
+      }
+    ],
+    "findings": [
+      {
+        "category": "maintainability",
+        "title": "Large source files detected",
+        "description": "Some analyzed source files exceed 250 lines. These files may be useful candidates for a maintainability review.",
+        "severity": "medium",
+        "files": [
+          "server/controllers/aiController.js"
+        ]
+      },
+      {
+        "category": "coupling",
+        "title": "High outgoing dependency files",
+        "description": "These files import many internal repository modules and may act as coordination points in the codebase.",
+        "severity": "medium",
+        "files": [
+          "client/src/App.jsx",
+          "client/src/pages/Home.jsx"
+        ]
+      },
+      {
+        "category": "coupling",
+        "title": "Shared dependency hotspots",
+        "description": "These files are imported by many other repository modules. Changes to them may affect a broader part of the codebase.",
+        "severity": "medium",
+        "files": [
+          "client/src/assets/assets.js"
+        ]
+      },
+      {
+        "category": "request-flow",
+        "title": "Frontend requests map to backend routes",
+        "description": "All detected frontend API requests were matched to backend routes.",
+        "severity": "info",
+        "files": []
+      },
+      {
+        "category": "integration",
+        "title": "External service integrations detected",
+        "description": "3 external API call(s) were detected. Services: Clipdrop API, Google Gemini API.",
+        "severity": "info",
+        "files": [
+          "server/controllers/aiController.js",
+          "server/testGemini.js"
+        ]
+      },
+      {
+        "category": "data-layer",
+        "title": "Data technologies detected",
+        "description": "Detected data-layer technologies: PostgreSQL.",
+        "severity": "info",
+        "files": [
+          "server/configs/db.js"
+        ]
+      }
+    ]
+  }
+}

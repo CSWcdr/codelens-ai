@@ -1,0 +1,3149 @@
+{
+  "schema_version": 2,
+  "analysis_engine_version": "2.2",
+  "owner": "CSWcdr",
+  "repo_name": "llm-security-gateway",
+  "analysis_type": "architecture",
+  "commit_sha": "7efb368586d1ab805a51e049394b7ec7ae300407",
+  "created_at": "2026-10-06T08:30:53.525291+00:00",
+  "data": {
+    "architecture": "Client-Server",
+    "nodes": [
+      {
+        "id": "backend/prisma.config.ts",
+        "label": "prisma.config.ts",
+        "path": "backend/prisma.config.ts",
+        "node_type": "source",
+        "language": "TypeScript",
+        "layer": "backend"
+      },
+      {
+        "id": "backend/src/app.ts",
+        "label": "app.ts",
+        "path": "backend/src/app.ts",
+        "node_type": "entry",
+        "language": "TypeScript",
+        "layer": "backend"
+      },
+      {
+        "id": "backend/src/config/env.ts",
+        "label": "env.ts",
+        "path": "backend/src/config/env.ts",
+        "node_type": "configuration",
+        "language": "TypeScript",
+        "layer": "backend"
+      },
+      {
+        "id": "backend/src/config/groq.ts",
+        "label": "groq.ts",
+        "path": "backend/src/config/groq.ts",
+        "node_type": "configuration",
+        "language": "TypeScript",
+        "layer": "backend"
+      },
+      {
+        "id": "backend/src/config/prisma.ts",
+        "label": "prisma.ts",
+        "path": "backend/src/config/prisma.ts",
+        "node_type": "configuration",
+        "language": "TypeScript",
+        "layer": "backend"
+      },
+      {
+        "id": "backend/src/config/redis.ts",
+        "label": "redis.ts",
+        "path": "backend/src/config/redis.ts",
+        "node_type": "configuration",
+        "language": "TypeScript",
+        "layer": "backend"
+      },
+      {
+        "id": "backend/src/controllers/analytics.controller.ts",
+        "label": "analytics.controller.ts",
+        "path": "backend/src/controllers/analytics.controller.ts",
+        "node_type": "controller",
+        "language": "TypeScript",
+        "layer": "backend"
+      },
+      {
+        "id": "backend/src/controllers/apiKey.controller.ts",
+        "label": "apiKey.controller.ts",
+        "path": "backend/src/controllers/apiKey.controller.ts",
+        "node_type": "controller",
+        "language": "TypeScript",
+        "layer": "backend"
+      },
+      {
+        "id": "backend/src/controllers/auth.controller.ts",
+        "label": "auth.controller.ts",
+        "path": "backend/src/controllers/auth.controller.ts",
+        "node_type": "controller",
+        "language": "TypeScript",
+        "layer": "backend"
+      },
+      {
+        "id": "backend/src/controllers/database.controller.ts",
+        "label": "database.controller.ts",
+        "path": "backend/src/controllers/database.controller.ts",
+        "node_type": "controller",
+        "language": "TypeScript",
+        "layer": "backend"
+      },
+      {
+        "id": "backend/src/controllers/gateway.controller.ts",
+        "label": "gateway.controller.ts",
+        "path": "backend/src/controllers/gateway.controller.ts",
+        "node_type": "controller",
+        "language": "TypeScript",
+        "layer": "backend"
+      },
+      {
+        "id": "backend/src/controllers/health.controller.ts",
+        "label": "health.controller.ts",
+        "path": "backend/src/controllers/health.controller.ts",
+        "node_type": "controller",
+        "language": "TypeScript",
+        "layer": "backend"
+      },
+      {
+        "id": "backend/src/controllers/project.controller.ts",
+        "label": "project.controller.ts",
+        "path": "backend/src/controllers/project.controller.ts",
+        "node_type": "controller",
+        "language": "TypeScript",
+        "layer": "backend"
+      },
+      {
+        "id": "backend/src/controllers/rateLimit.controller.ts",
+        "label": "rateLimit.controller.ts",
+        "path": "backend/src/controllers/rateLimit.controller.ts",
+        "node_type": "controller",
+        "language": "TypeScript",
+        "layer": "backend"
+      },
+      {
+        "id": "backend/src/controllers/requestLog.controller.ts",
+        "label": "requestLog.controller.ts",
+        "path": "backend/src/controllers/requestLog.controller.ts",
+        "node_type": "controller",
+        "language": "TypeScript",
+        "layer": "backend"
+      },
+      {
+        "id": "backend/src/controllers/securityPolicy.controller.ts",
+        "label": "securityPolicy.controller.ts",
+        "path": "backend/src/controllers/securityPolicy.controller.ts",
+        "node_type": "controller",
+        "language": "TypeScript",
+        "layer": "backend"
+      },
+      {
+        "id": "backend/src/middleware/apiKeyAuth.ts",
+        "label": "apiKeyAuth.ts",
+        "path": "backend/src/middleware/apiKeyAuth.ts",
+        "node_type": "middleware",
+        "language": "TypeScript",
+        "layer": "backend"
+      },
+      {
+        "id": "backend/src/middleware/auth.ts",
+        "label": "auth.ts",
+        "path": "backend/src/middleware/auth.ts",
+        "node_type": "middleware",
+        "language": "TypeScript",
+        "layer": "backend"
+      },
+      {
+        "id": "backend/src/middleware/errorHandler.ts",
+        "label": "errorHandler.ts",
+        "path": "backend/src/middleware/errorHandler.ts",
+        "node_type": "middleware",
+        "language": "TypeScript",
+        "layer": "backend"
+      },
+      {
+        "id": "backend/src/middleware/rateLimiter.ts",
+        "label": "rateLimiter.ts",
+        "path": "backend/src/middleware/rateLimiter.ts",
+        "node_type": "middleware",
+        "language": "TypeScript",
+        "layer": "backend"
+      },
+      {
+        "id": "backend/src/middleware/resourceOwnership.ts",
+        "label": "resourceOwnership.ts",
+        "path": "backend/src/middleware/resourceOwnership.ts",
+        "node_type": "middleware",
+        "language": "TypeScript",
+        "layer": "backend"
+      },
+      {
+        "id": "backend/src/routes/analytics.routes.ts",
+        "label": "analytics.routes.ts",
+        "path": "backend/src/routes/analytics.routes.ts",
+        "node_type": "api",
+        "language": "TypeScript",
+        "layer": "backend"
+      },
+      {
+        "id": "backend/src/routes/apiKey.routes.ts",
+        "label": "apiKey.routes.ts",
+        "path": "backend/src/routes/apiKey.routes.ts",
+        "node_type": "api",
+        "language": "TypeScript",
+        "layer": "backend"
+      },
+      {
+        "id": "backend/src/routes/auth.routes.ts",
+        "label": "auth.routes.ts",
+        "path": "backend/src/routes/auth.routes.ts",
+        "node_type": "api",
+        "language": "TypeScript",
+        "layer": "backend"
+      },
+      {
+        "id": "backend/src/routes/database.routes.ts",
+        "label": "database.routes.ts",
+        "path": "backend/src/routes/database.routes.ts",
+        "node_type": "api",
+        "language": "TypeScript",
+        "layer": "backend"
+      },
+      {
+        "id": "backend/src/routes/gateway.routes.ts",
+        "label": "gateway.routes.ts",
+        "path": "backend/src/routes/gateway.routes.ts",
+        "node_type": "api",
+        "language": "TypeScript",
+        "layer": "backend"
+      },
+      {
+        "id": "backend/src/routes/health.routes.ts",
+        "label": "health.routes.ts",
+        "path": "backend/src/routes/health.routes.ts",
+        "node_type": "api",
+        "language": "TypeScript",
+        "layer": "backend"
+      },
+      {
+        "id": "backend/src/routes/project.routes.ts",
+        "label": "project.routes.ts",
+        "path": "backend/src/routes/project.routes.ts",
+        "node_type": "api",
+        "language": "TypeScript",
+        "layer": "backend"
+      },
+      {
+        "id": "backend/src/routes/rateLimit.routes.ts",
+        "label": "rateLimit.routes.ts",
+        "path": "backend/src/routes/rateLimit.routes.ts",
+        "node_type": "api",
+        "language": "TypeScript",
+        "layer": "backend"
+      },
+      {
+        "id": "backend/src/routes/requestLog.routes.ts",
+        "label": "requestLog.routes.ts",
+        "path": "backend/src/routes/requestLog.routes.ts",
+        "node_type": "api",
+        "language": "TypeScript",
+        "layer": "backend"
+      },
+      {
+        "id": "backend/src/routes/securityPolicy.routes.ts",
+        "label": "securityPolicy.routes.ts",
+        "path": "backend/src/routes/securityPolicy.routes.ts",
+        "node_type": "api",
+        "language": "TypeScript",
+        "layer": "backend"
+      },
+      {
+        "id": "backend/src/security/maskSensitiveData.ts",
+        "label": "maskSensitiveData.ts",
+        "path": "backend/src/security/maskSensitiveData.ts",
+        "node_type": "source",
+        "language": "TypeScript",
+        "layer": "backend"
+      },
+      {
+        "id": "backend/src/security/outputScanner.ts",
+        "label": "outputScanner.ts",
+        "path": "backend/src/security/outputScanner.ts",
+        "node_type": "source",
+        "language": "TypeScript",
+        "layer": "backend"
+      },
+      {
+        "id": "backend/src/security/policyEngine.ts",
+        "label": "policyEngine.ts",
+        "path": "backend/src/security/policyEngine.ts",
+        "node_type": "source",
+        "language": "TypeScript",
+        "layer": "backend"
+      },
+      {
+        "id": "backend/src/security/promptScanner.ts",
+        "label": "promptScanner.ts",
+        "path": "backend/src/security/promptScanner.ts",
+        "node_type": "source",
+        "language": "TypeScript",
+        "layer": "backend"
+      },
+      {
+        "id": "backend/src/server.ts",
+        "label": "server.ts",
+        "path": "backend/src/server.ts",
+        "node_type": "entry",
+        "language": "TypeScript",
+        "layer": "backend"
+      },
+      {
+        "id": "backend/src/services/analytics.service.ts",
+        "label": "analytics.service.ts",
+        "path": "backend/src/services/analytics.service.ts",
+        "node_type": "service",
+        "language": "TypeScript",
+        "layer": "backend"
+      },
+      {
+        "id": "backend/src/services/apiKey.service.ts",
+        "label": "apiKey.service.ts",
+        "path": "backend/src/services/apiKey.service.ts",
+        "node_type": "service",
+        "language": "TypeScript",
+        "layer": "backend"
+      },
+      {
+        "id": "backend/src/services/auth.service.ts",
+        "label": "auth.service.ts",
+        "path": "backend/src/services/auth.service.ts",
+        "node_type": "service",
+        "language": "TypeScript",
+        "layer": "backend"
+      },
+      {
+        "id": "backend/src/services/llm.service.ts",
+        "label": "llm.service.ts",
+        "path": "backend/src/services/llm.service.ts",
+        "node_type": "service",
+        "language": "TypeScript",
+        "layer": "backend"
+      },
+      {
+        "id": "backend/src/services/project.service.ts",
+        "label": "project.service.ts",
+        "path": "backend/src/services/project.service.ts",
+        "node_type": "service",
+        "language": "TypeScript",
+        "layer": "backend"
+      },
+      {
+        "id": "backend/src/services/rateLimit.service.ts",
+        "label": "rateLimit.service.ts",
+        "path": "backend/src/services/rateLimit.service.ts",
+        "node_type": "service",
+        "language": "TypeScript",
+        "layer": "backend"
+      },
+      {
+        "id": "backend/src/services/rateLimiter.service.ts",
+        "label": "rateLimiter.service.ts",
+        "path": "backend/src/services/rateLimiter.service.ts",
+        "node_type": "service",
+        "language": "TypeScript",
+        "layer": "backend"
+      },
+      {
+        "id": "backend/src/services/requestLog.service.ts",
+        "label": "requestLog.service.ts",
+        "path": "backend/src/services/requestLog.service.ts",
+        "node_type": "service",
+        "language": "TypeScript",
+        "layer": "backend"
+      },
+      {
+        "id": "backend/src/services/securityPolicy.service.ts",
+        "label": "securityPolicy.service.ts",
+        "path": "backend/src/services/securityPolicy.service.ts",
+        "node_type": "service",
+        "language": "TypeScript",
+        "layer": "backend"
+      },
+      {
+        "id": "backend/src/utils/apiKey.ts",
+        "label": "apiKey.ts",
+        "path": "backend/src/utils/apiKey.ts",
+        "node_type": "utility",
+        "language": "TypeScript",
+        "layer": "backend"
+      },
+      {
+        "id": "backend/src/utils/costCalculator.ts",
+        "label": "costCalculator.ts",
+        "path": "backend/src/utils/costCalculator.ts",
+        "node_type": "utility",
+        "language": "TypeScript",
+        "layer": "backend"
+      },
+      {
+        "id": "backend/src/utils/jwt.ts",
+        "label": "jwt.ts",
+        "path": "backend/src/utils/jwt.ts",
+        "node_type": "utility",
+        "language": "TypeScript",
+        "layer": "backend"
+      },
+      {
+        "id": "backend/src/validators/analytics.validator.ts",
+        "label": "analytics.validator.ts",
+        "path": "backend/src/validators/analytics.validator.ts",
+        "node_type": "source",
+        "language": "TypeScript",
+        "layer": "backend"
+      },
+      {
+        "id": "backend/src/validators/apiKey.validator.ts",
+        "label": "apiKey.validator.ts",
+        "path": "backend/src/validators/apiKey.validator.ts",
+        "node_type": "source",
+        "language": "TypeScript",
+        "layer": "backend"
+      },
+      {
+        "id": "backend/src/validators/auth.validator.ts",
+        "label": "auth.validator.ts",
+        "path": "backend/src/validators/auth.validator.ts",
+        "node_type": "source",
+        "language": "TypeScript",
+        "layer": "backend"
+      },
+      {
+        "id": "backend/src/validators/gateway.validator.ts",
+        "label": "gateway.validator.ts",
+        "path": "backend/src/validators/gateway.validator.ts",
+        "node_type": "source",
+        "language": "TypeScript",
+        "layer": "backend"
+      },
+      {
+        "id": "backend/src/validators/project.validator.ts",
+        "label": "project.validator.ts",
+        "path": "backend/src/validators/project.validator.ts",
+        "node_type": "source",
+        "language": "TypeScript",
+        "layer": "backend"
+      },
+      {
+        "id": "backend/src/validators/rateLimit.validator.ts",
+        "label": "rateLimit.validator.ts",
+        "path": "backend/src/validators/rateLimit.validator.ts",
+        "node_type": "source",
+        "language": "TypeScript",
+        "layer": "backend"
+      },
+      {
+        "id": "backend/src/validators/requestLog.validator.ts",
+        "label": "requestLog.validator.ts",
+        "path": "backend/src/validators/requestLog.validator.ts",
+        "node_type": "source",
+        "language": "TypeScript",
+        "layer": "backend"
+      },
+      {
+        "id": "backend/src/validators/securityPolicy.validator.ts",
+        "label": "securityPolicy.validator.ts",
+        "path": "backend/src/validators/securityPolicy.validator.ts",
+        "node_type": "source",
+        "language": "TypeScript",
+        "layer": "backend"
+      },
+      {
+        "id": "frontend/eslint.config.js",
+        "label": "eslint.config.js",
+        "path": "frontend/eslint.config.js",
+        "node_type": "configuration",
+        "language": "JavaScript",
+        "layer": "frontend"
+      },
+      {
+        "id": "frontend/src/App.tsx",
+        "label": "App.tsx",
+        "path": "frontend/src/App.tsx",
+        "node_type": "entry",
+        "language": "TypeScript",
+        "layer": "frontend"
+      },
+      {
+        "id": "frontend/src/components/analytics/AnalyticsMetricCard.tsx",
+        "label": "AnalyticsMetricCard.tsx",
+        "path": "frontend/src/components/analytics/AnalyticsMetricCard.tsx",
+        "node_type": "component",
+        "language": "TypeScript",
+        "layer": "frontend"
+      },
+      {
+        "id": "frontend/src/components/analytics/ModelUsageChart.tsx",
+        "label": "ModelUsageChart.tsx",
+        "path": "frontend/src/components/analytics/ModelUsageChart.tsx",
+        "node_type": "component",
+        "language": "TypeScript",
+        "layer": "frontend"
+      },
+      {
+        "id": "frontend/src/components/analytics/RequestTrendChart.tsx",
+        "label": "RequestTrendChart.tsx",
+        "path": "frontend/src/components/analytics/RequestTrendChart.tsx",
+        "node_type": "component",
+        "language": "TypeScript",
+        "layer": "frontend"
+      },
+      {
+        "id": "frontend/src/components/analytics/StatusDistributionChart.tsx",
+        "label": "StatusDistributionChart.tsx",
+        "path": "frontend/src/components/analytics/StatusDistributionChart.tsx",
+        "node_type": "component",
+        "language": "TypeScript",
+        "layer": "frontend"
+      },
+      {
+        "id": "frontend/src/components/analytics/TopProjectTable.tsx",
+        "label": "TopProjectTable.tsx",
+        "path": "frontend/src/components/analytics/TopProjectTable.tsx",
+        "node_type": "component",
+        "language": "TypeScript",
+        "layer": "frontend"
+      },
+      {
+        "id": "frontend/src/components/api-keys/ApiKeyRow.tsx",
+        "label": "ApiKeyRow.tsx",
+        "path": "frontend/src/components/api-keys/ApiKeyRow.tsx",
+        "node_type": "component",
+        "language": "TypeScript",
+        "layer": "frontend"
+      },
+      {
+        "id": "frontend/src/components/api-keys/ApiKeySecretModal.tsx",
+        "label": "ApiKeySecretModal.tsx",
+        "path": "frontend/src/components/api-keys/ApiKeySecretModal.tsx",
+        "node_type": "component",
+        "language": "TypeScript",
+        "layer": "frontend"
+      },
+      {
+        "id": "frontend/src/components/api-keys/CreateApiKeyModal.tsx",
+        "label": "CreateApiKeyModal.tsx",
+        "path": "frontend/src/components/api-keys/CreateApiKeyModal.tsx",
+        "node_type": "component",
+        "language": "TypeScript",
+        "layer": "frontend"
+      },
+      {
+        "id": "frontend/src/components/auth/ProtectedRoute.tsx",
+        "label": "ProtectedRoute.tsx",
+        "path": "frontend/src/components/auth/ProtectedRoute.tsx",
+        "node_type": "component",
+        "language": "TypeScript",
+        "layer": "frontend"
+      },
+      {
+        "id": "frontend/src/components/dashboard/MetricCard.tsx",
+        "label": "MetricCard.tsx",
+        "path": "frontend/src/components/dashboard/MetricCard.tsx",
+        "node_type": "component",
+        "language": "TypeScript",
+        "layer": "frontend"
+      },
+      {
+        "id": "frontend/src/components/dashboard/RecentRequests.tsx",
+        "label": "RecentRequests.tsx",
+        "path": "frontend/src/components/dashboard/RecentRequests.tsx",
+        "node_type": "component",
+        "language": "TypeScript",
+        "layer": "frontend"
+      },
+      {
+        "id": "frontend/src/components/dashboard/RequestsChart.tsx",
+        "label": "RequestsChart.tsx",
+        "path": "frontend/src/components/dashboard/RequestsChart.tsx",
+        "node_type": "component",
+        "language": "TypeScript",
+        "layer": "frontend"
+      },
+      {
+        "id": "frontend/src/components/dashboard/SecurityAlerts.tsx",
+        "label": "SecurityAlerts.tsx",
+        "path": "frontend/src/components/dashboard/SecurityAlerts.tsx",
+        "node_type": "component",
+        "language": "TypeScript",
+        "layer": "frontend"
+      },
+      {
+        "id": "frontend/src/components/layout/Header.tsx",
+        "label": "Header.tsx",
+        "path": "frontend/src/components/layout/Header.tsx",
+        "node_type": "component",
+        "language": "TypeScript",
+        "layer": "frontend"
+      },
+      {
+        "id": "frontend/src/components/layout/MobileSidebar.tsx",
+        "label": "MobileSidebar.tsx",
+        "path": "frontend/src/components/layout/MobileSidebar.tsx",
+        "node_type": "component",
+        "language": "TypeScript",
+        "layer": "frontend"
+      },
+      {
+        "id": "frontend/src/components/layout/PageHeader.tsx",
+        "label": "PageHeader.tsx",
+        "path": "frontend/src/components/layout/PageHeader.tsx",
+        "node_type": "component",
+        "language": "TypeScript",
+        "layer": "frontend"
+      },
+      {
+        "id": "frontend/src/components/layout/Sidebar.tsx",
+        "label": "Sidebar.tsx",
+        "path": "frontend/src/components/layout/Sidebar.tsx",
+        "node_type": "component",
+        "language": "TypeScript",
+        "layer": "frontend"
+      },
+      {
+        "id": "frontend/src/components/playground/GatewayResponse.tsx",
+        "label": "GatewayResponse.tsx",
+        "path": "frontend/src/components/playground/GatewayResponse.tsx",
+        "node_type": "component",
+        "language": "TypeScript",
+        "layer": "frontend"
+      },
+      {
+        "id": "frontend/src/components/playground/SecurityChecks.tsx",
+        "label": "SecurityChecks.tsx",
+        "path": "frontend/src/components/playground/SecurityChecks.tsx",
+        "node_type": "component",
+        "language": "TypeScript",
+        "layer": "frontend"
+      },
+      {
+        "id": "frontend/src/components/projects/CreateProjectModal.tsx",
+        "label": "CreateProjectModal.tsx",
+        "path": "frontend/src/components/projects/CreateProjectModal.tsx",
+        "node_type": "component",
+        "language": "TypeScript",
+        "layer": "frontend"
+      },
+      {
+        "id": "frontend/src/components/projects/ProjectCard.tsx",
+        "label": "ProjectCard.tsx",
+        "path": "frontend/src/components/projects/ProjectCard.tsx",
+        "node_type": "component",
+        "language": "TypeScript",
+        "layer": "frontend"
+      },
+      {
+        "id": "frontend/src/components/rate-limits/LimitInput.tsx",
+        "label": "LimitInput.tsx",
+        "path": "frontend/src/components/rate-limits/LimitInput.tsx",
+        "node_type": "component",
+        "language": "TypeScript",
+        "layer": "frontend"
+      },
+      {
+        "id": "frontend/src/components/rate-limits/RateLimitUsage.tsx",
+        "label": "RateLimitUsage.tsx",
+        "path": "frontend/src/components/rate-limits/RateLimitUsage.tsx",
+        "node_type": "component",
+        "language": "TypeScript",
+        "layer": "frontend"
+      },
+      {
+        "id": "frontend/src/components/security/PolicySummary.tsx",
+        "label": "PolicySummary.tsx",
+        "path": "frontend/src/components/security/PolicySummary.tsx",
+        "node_type": "component",
+        "language": "TypeScript",
+        "layer": "frontend"
+      },
+      {
+        "id": "frontend/src/components/security/SecurityRuleCard.tsx",
+        "label": "SecurityRuleCard.tsx",
+        "path": "frontend/src/components/security/SecurityRuleCard.tsx",
+        "node_type": "component",
+        "language": "TypeScript",
+        "layer": "frontend"
+      },
+      {
+        "id": "frontend/src/components/ui/Badge.tsx",
+        "label": "Badge.tsx",
+        "path": "frontend/src/components/ui/Badge.tsx",
+        "node_type": "component",
+        "language": "TypeScript",
+        "layer": "frontend"
+      },
+      {
+        "id": "frontend/src/components/ui/Button.tsx",
+        "label": "Button.tsx",
+        "path": "frontend/src/components/ui/Button.tsx",
+        "node_type": "component",
+        "language": "TypeScript",
+        "layer": "frontend"
+      },
+      {
+        "id": "frontend/src/components/ui/Card.tsx",
+        "label": "Card.tsx",
+        "path": "frontend/src/components/ui/Card.tsx",
+        "node_type": "component",
+        "language": "TypeScript",
+        "layer": "frontend"
+      },
+      {
+        "id": "frontend/src/components/ui/EmptyState.tsx",
+        "label": "EmptyState.tsx",
+        "path": "frontend/src/components/ui/EmptyState.tsx",
+        "node_type": "component",
+        "language": "TypeScript",
+        "layer": "frontend"
+      },
+      {
+        "id": "frontend/src/components/ui/Input.tsx",
+        "label": "Input.tsx",
+        "path": "frontend/src/components/ui/Input.tsx",
+        "node_type": "component",
+        "language": "TypeScript",
+        "layer": "frontend"
+      },
+      {
+        "id": "frontend/src/components/ui/LoadingSpinner.tsx",
+        "label": "LoadingSpinner.tsx",
+        "path": "frontend/src/components/ui/LoadingSpinner.tsx",
+        "node_type": "component",
+        "language": "TypeScript",
+        "layer": "frontend"
+      },
+      {
+        "id": "frontend/src/components/ui/Modal.tsx",
+        "label": "Modal.tsx",
+        "path": "frontend/src/components/ui/Modal.tsx",
+        "node_type": "component",
+        "language": "TypeScript",
+        "layer": "frontend"
+      },
+      {
+        "id": "frontend/src/components/ui/Select.tsx",
+        "label": "Select.tsx",
+        "path": "frontend/src/components/ui/Select.tsx",
+        "node_type": "component",
+        "language": "TypeScript",
+        "layer": "frontend"
+      },
+      {
+        "id": "frontend/src/context/ApiKeysContext.tsx",
+        "label": "ApiKeysContext.tsx",
+        "path": "frontend/src/context/ApiKeysContext.tsx",
+        "node_type": "source",
+        "language": "TypeScript",
+        "layer": "frontend"
+      },
+      {
+        "id": "frontend/src/context/AuthContext.tsx",
+        "label": "AuthContext.tsx",
+        "path": "frontend/src/context/AuthContext.tsx",
+        "node_type": "source",
+        "language": "TypeScript",
+        "layer": "frontend"
+      },
+      {
+        "id": "frontend/src/context/ProjectsContext.tsx",
+        "label": "ProjectsContext.tsx",
+        "path": "frontend/src/context/ProjectsContext.tsx",
+        "node_type": "source",
+        "language": "TypeScript",
+        "layer": "frontend"
+      },
+      {
+        "id": "frontend/src/context/RateLimitsContext.tsx",
+        "label": "RateLimitsContext.tsx",
+        "path": "frontend/src/context/RateLimitsContext.tsx",
+        "node_type": "source",
+        "language": "TypeScript",
+        "layer": "frontend"
+      },
+      {
+        "id": "frontend/src/context/SecurityPoliciesContext.tsx",
+        "label": "SecurityPoliciesContext.tsx",
+        "path": "frontend/src/context/SecurityPoliciesContext.tsx",
+        "node_type": "source",
+        "language": "TypeScript",
+        "layer": "frontend"
+      },
+      {
+        "id": "frontend/src/data/mockData.ts",
+        "label": "mockData.ts",
+        "path": "frontend/src/data/mockData.ts",
+        "node_type": "source",
+        "language": "TypeScript",
+        "layer": "frontend"
+      },
+      {
+        "id": "frontend/src/hooks/useApiKeys.ts",
+        "label": "useApiKeys.ts",
+        "path": "frontend/src/hooks/useApiKeys.ts",
+        "node_type": "hook",
+        "language": "TypeScript",
+        "layer": "frontend"
+      },
+      {
+        "id": "frontend/src/hooks/useAuth.ts",
+        "label": "useAuth.ts",
+        "path": "frontend/src/hooks/useAuth.ts",
+        "node_type": "hook",
+        "language": "TypeScript",
+        "layer": "frontend"
+      },
+      {
+        "id": "frontend/src/hooks/useProjects.tsx",
+        "label": "useProjects.tsx",
+        "path": "frontend/src/hooks/useProjects.tsx",
+        "node_type": "hook",
+        "language": "TypeScript",
+        "layer": "frontend"
+      },
+      {
+        "id": "frontend/src/hooks/useRateLimits.ts",
+        "label": "useRateLimits.ts",
+        "path": "frontend/src/hooks/useRateLimits.ts",
+        "node_type": "hook",
+        "language": "TypeScript",
+        "layer": "frontend"
+      },
+      {
+        "id": "frontend/src/hooks/useSecurityPolicies.ts",
+        "label": "useSecurityPolicies.ts",
+        "path": "frontend/src/hooks/useSecurityPolicies.ts",
+        "node_type": "hook",
+        "language": "TypeScript",
+        "layer": "frontend"
+      },
+      {
+        "id": "frontend/src/layouts/AuthLayout.tsx",
+        "label": "AuthLayout.tsx",
+        "path": "frontend/src/layouts/AuthLayout.tsx",
+        "node_type": "source",
+        "language": "TypeScript",
+        "layer": "frontend"
+      },
+      {
+        "id": "frontend/src/layouts/DashboardLayout.tsx",
+        "label": "DashboardLayout.tsx",
+        "path": "frontend/src/layouts/DashboardLayout.tsx",
+        "node_type": "source",
+        "language": "TypeScript",
+        "layer": "frontend"
+      },
+      {
+        "id": "frontend/src/lib/api.ts",
+        "label": "api.ts",
+        "path": "frontend/src/lib/api.ts",
+        "node_type": "utility",
+        "language": "TypeScript",
+        "layer": "frontend"
+      },
+      {
+        "id": "frontend/src/lib/constants.ts",
+        "label": "constants.ts",
+        "path": "frontend/src/lib/constants.ts",
+        "node_type": "utility",
+        "language": "TypeScript",
+        "layer": "frontend"
+      },
+      {
+        "id": "frontend/src/lib/utils.ts",
+        "label": "utils.ts",
+        "path": "frontend/src/lib/utils.ts",
+        "node_type": "utility",
+        "language": "TypeScript",
+        "layer": "frontend"
+      },
+      {
+        "id": "frontend/src/main.tsx",
+        "label": "main.tsx",
+        "path": "frontend/src/main.tsx",
+        "node_type": "entry",
+        "language": "TypeScript",
+        "layer": "frontend"
+      },
+      {
+        "id": "frontend/src/pages/AnalyticsPage.tsx",
+        "label": "AnalyticsPage.tsx",
+        "path": "frontend/src/pages/AnalyticsPage.tsx",
+        "node_type": "page",
+        "language": "TypeScript",
+        "layer": "frontend"
+      },
+      {
+        "id": "frontend/src/pages/ApiKeysPage.tsx",
+        "label": "ApiKeysPage.tsx",
+        "path": "frontend/src/pages/ApiKeysPage.tsx",
+        "node_type": "page",
+        "language": "TypeScript",
+        "layer": "frontend"
+      },
+      {
+        "id": "frontend/src/pages/LoginPage.tsx",
+        "label": "LoginPage.tsx",
+        "path": "frontend/src/pages/LoginPage.tsx",
+        "node_type": "page",
+        "language": "TypeScript",
+        "layer": "frontend"
+      },
+      {
+        "id": "frontend/src/pages/NotFoundPage.tsx",
+        "label": "NotFoundPage.tsx",
+        "path": "frontend/src/pages/NotFoundPage.tsx",
+        "node_type": "page",
+        "language": "TypeScript",
+        "layer": "frontend"
+      },
+      {
+        "id": "frontend/src/pages/OverviewPage.tsx",
+        "label": "OverviewPage.tsx",
+        "path": "frontend/src/pages/OverviewPage.tsx",
+        "node_type": "page",
+        "language": "TypeScript",
+        "layer": "frontend"
+      },
+      {
+        "id": "frontend/src/pages/PlaygroundPage.tsx",
+        "label": "PlaygroundPage.tsx",
+        "path": "frontend/src/pages/PlaygroundPage.tsx",
+        "node_type": "page",
+        "language": "TypeScript",
+        "layer": "frontend"
+      },
+      {
+        "id": "frontend/src/pages/ProjectDetailsPage.tsx",
+        "label": "ProjectDetailsPage.tsx",
+        "path": "frontend/src/pages/ProjectDetailsPage.tsx",
+        "node_type": "page",
+        "language": "TypeScript",
+        "layer": "frontend"
+      },
+      {
+        "id": "frontend/src/pages/ProjectsPage.tsx",
+        "label": "ProjectsPage.tsx",
+        "path": "frontend/src/pages/ProjectsPage.tsx",
+        "node_type": "page",
+        "language": "TypeScript",
+        "layer": "frontend"
+      },
+      {
+        "id": "frontend/src/pages/RateLimitsPage.tsx",
+        "label": "RateLimitsPage.tsx",
+        "path": "frontend/src/pages/RateLimitsPage.tsx",
+        "node_type": "page",
+        "language": "TypeScript",
+        "layer": "frontend"
+      },
+      {
+        "id": "frontend/src/pages/RegisterPage.tsx",
+        "label": "RegisterPage.tsx",
+        "path": "frontend/src/pages/RegisterPage.tsx",
+        "node_type": "page",
+        "language": "TypeScript",
+        "layer": "frontend"
+      },
+      {
+        "id": "frontend/src/pages/RequestDetailsPage.tsx",
+        "label": "RequestDetailsPage.tsx",
+        "path": "frontend/src/pages/RequestDetailsPage.tsx",
+        "node_type": "page",
+        "language": "TypeScript",
+        "layer": "frontend"
+      },
+      {
+        "id": "frontend/src/pages/RequestLogsPage.tsx",
+        "label": "RequestLogsPage.tsx",
+        "path": "frontend/src/pages/RequestLogsPage.tsx",
+        "node_type": "page",
+        "language": "TypeScript",
+        "layer": "frontend"
+      },
+      {
+        "id": "frontend/src/pages/SecurityRulesPage.tsx",
+        "label": "SecurityRulesPage.tsx",
+        "path": "frontend/src/pages/SecurityRulesPage.tsx",
+        "node_type": "page",
+        "language": "TypeScript",
+        "layer": "frontend"
+      },
+      {
+        "id": "frontend/src/pages/SettingsPage.tsx",
+        "label": "SettingsPage.tsx",
+        "path": "frontend/src/pages/SettingsPage.tsx",
+        "node_type": "page",
+        "language": "TypeScript",
+        "layer": "frontend"
+      },
+      {
+        "id": "frontend/src/routes/AppRoutes.tsx",
+        "label": "AppRoutes.tsx",
+        "path": "frontend/src/routes/AppRoutes.tsx",
+        "node_type": "api",
+        "language": "TypeScript",
+        "layer": "frontend"
+      },
+      {
+        "id": "frontend/src/services/analytics.service.ts",
+        "label": "analytics.service.ts",
+        "path": "frontend/src/services/analytics.service.ts",
+        "node_type": "service",
+        "language": "TypeScript",
+        "layer": "frontend"
+      },
+      {
+        "id": "frontend/src/services/apiKeys.service.ts",
+        "label": "apiKeys.service.ts",
+        "path": "frontend/src/services/apiKeys.service.ts",
+        "node_type": "service",
+        "language": "TypeScript",
+        "layer": "frontend"
+      },
+      {
+        "id": "frontend/src/services/auth.service.ts",
+        "label": "auth.service.ts",
+        "path": "frontend/src/services/auth.service.ts",
+        "node_type": "service",
+        "language": "TypeScript",
+        "layer": "frontend"
+      },
+      {
+        "id": "frontend/src/services/gateway.service.ts",
+        "label": "gateway.service.ts",
+        "path": "frontend/src/services/gateway.service.ts",
+        "node_type": "service",
+        "language": "TypeScript",
+        "layer": "frontend"
+      },
+      {
+        "id": "frontend/src/services/logs.service.ts",
+        "label": "logs.service.ts",
+        "path": "frontend/src/services/logs.service.ts",
+        "node_type": "service",
+        "language": "TypeScript",
+        "layer": "frontend"
+      },
+      {
+        "id": "frontend/src/services/projects.service.ts",
+        "label": "projects.service.ts",
+        "path": "frontend/src/services/projects.service.ts",
+        "node_type": "service",
+        "language": "TypeScript",
+        "layer": "frontend"
+      },
+      {
+        "id": "frontend/src/services/rateLimits.service.ts",
+        "label": "rateLimits.service.ts",
+        "path": "frontend/src/services/rateLimits.service.ts",
+        "node_type": "service",
+        "language": "TypeScript",
+        "layer": "frontend"
+      },
+      {
+        "id": "frontend/src/services/security.service.ts",
+        "label": "security.service.ts",
+        "path": "frontend/src/services/security.service.ts",
+        "node_type": "service",
+        "language": "TypeScript",
+        "layer": "frontend"
+      },
+      {
+        "id": "frontend/src/types/index.ts",
+        "label": "index.ts",
+        "path": "frontend/src/types/index.ts",
+        "node_type": "entry",
+        "language": "TypeScript",
+        "layer": "frontend"
+      },
+      {
+        "id": "frontend/src/utils/api.ts",
+        "label": "api.ts",
+        "path": "frontend/src/utils/api.ts",
+        "node_type": "utility",
+        "language": "TypeScript",
+        "layer": "frontend"
+      },
+      {
+        "id": "frontend/vite.config.ts",
+        "label": "vite.config.ts",
+        "path": "frontend/vite.config.ts",
+        "node_type": "configuration",
+        "language": "TypeScript",
+        "layer": "frontend"
+      }
+    ],
+    "edges": [
+      {
+        "source": "backend/src/app.ts",
+        "target": "backend/src/config/env.ts",
+        "relationship": "imports"
+      },
+      {
+        "source": "backend/src/app.ts",
+        "target": "backend/src/middleware/errorHandler.ts",
+        "relationship": "imports"
+      },
+      {
+        "source": "backend/src/app.ts",
+        "target": "backend/src/routes/analytics.routes.ts",
+        "relationship": "imports"
+      },
+      {
+        "source": "backend/src/app.ts",
+        "target": "backend/src/routes/apiKey.routes.ts",
+        "relationship": "imports"
+      },
+      {
+        "source": "backend/src/app.ts",
+        "target": "backend/src/routes/auth.routes.ts",
+        "relationship": "imports"
+      },
+      {
+        "source": "backend/src/app.ts",
+        "target": "backend/src/routes/database.routes.ts",
+        "relationship": "imports"
+      },
+      {
+        "source": "backend/src/app.ts",
+        "target": "backend/src/routes/gateway.routes.ts",
+        "relationship": "imports"
+      },
+      {
+        "source": "backend/src/app.ts",
+        "target": "backend/src/routes/health.routes.ts",
+        "relationship": "imports"
+      },
+      {
+        "source": "backend/src/app.ts",
+        "target": "backend/src/routes/project.routes.ts",
+        "relationship": "imports"
+      },
+      {
+        "source": "backend/src/app.ts",
+        "target": "backend/src/routes/rateLimit.routes.ts",
+        "relationship": "imports"
+      },
+      {
+        "source": "backend/src/app.ts",
+        "target": "backend/src/routes/requestLog.routes.ts",
+        "relationship": "imports"
+      },
+      {
+        "source": "backend/src/app.ts",
+        "target": "backend/src/routes/securityPolicy.routes.ts",
+        "relationship": "imports"
+      },
+      {
+        "source": "backend/src/config/groq.ts",
+        "target": "backend/src/config/env.ts",
+        "relationship": "imports"
+      },
+      {
+        "source": "backend/src/config/redis.ts",
+        "target": "backend/src/config/env.ts",
+        "relationship": "imports"
+      },
+      {
+        "source": "backend/src/controllers/analytics.controller.ts",
+        "target": "backend/src/services/analytics.service.ts",
+        "relationship": "imports"
+      },
+      {
+        "source": "backend/src/controllers/analytics.controller.ts",
+        "target": "backend/src/services/project.service.ts",
+        "relationship": "imports"
+      },
+      {
+        "source": "backend/src/controllers/analytics.controller.ts",
+        "target": "backend/src/validators/analytics.validator.ts",
+        "relationship": "imports"
+      },
+      {
+        "source": "backend/src/controllers/apiKey.controller.ts",
+        "target": "backend/src/services/apiKey.service.ts",
+        "relationship": "imports"
+      },
+      {
+        "source": "backend/src/controllers/apiKey.controller.ts",
+        "target": "backend/src/services/project.service.ts",
+        "relationship": "imports"
+      },
+      {
+        "source": "backend/src/controllers/apiKey.controller.ts",
+        "target": "backend/src/utils/apiKey.ts",
+        "relationship": "imports"
+      },
+      {
+        "source": "backend/src/controllers/apiKey.controller.ts",
+        "target": "backend/src/validators/apiKey.validator.ts",
+        "relationship": "imports"
+      },
+      {
+        "source": "backend/src/controllers/auth.controller.ts",
+        "target": "backend/src/services/auth.service.ts",
+        "relationship": "imports"
+      },
+      {
+        "source": "backend/src/controllers/auth.controller.ts",
+        "target": "backend/src/utils/jwt.ts",
+        "relationship": "imports"
+      },
+      {
+        "source": "backend/src/controllers/auth.controller.ts",
+        "target": "backend/src/validators/auth.validator.ts",
+        "relationship": "imports"
+      },
+      {
+        "source": "backend/src/controllers/database.controller.ts",
+        "target": "backend/src/config/prisma.ts",
+        "relationship": "imports"
+      },
+      {
+        "source": "backend/src/controllers/gateway.controller.ts",
+        "target": "backend/src/security/maskSensitiveData.ts",
+        "relationship": "imports"
+      },
+      {
+        "source": "backend/src/controllers/gateway.controller.ts",
+        "target": "backend/src/security/outputScanner.ts",
+        "relationship": "imports"
+      },
+      {
+        "source": "backend/src/controllers/gateway.controller.ts",
+        "target": "backend/src/security/policyEngine.ts",
+        "relationship": "imports"
+      },
+      {
+        "source": "backend/src/controllers/gateway.controller.ts",
+        "target": "backend/src/security/promptScanner.ts",
+        "relationship": "imports"
+      },
+      {
+        "source": "backend/src/controllers/gateway.controller.ts",
+        "target": "backend/src/services/llm.service.ts",
+        "relationship": "imports"
+      },
+      {
+        "source": "backend/src/controllers/gateway.controller.ts",
+        "target": "backend/src/services/requestLog.service.ts",
+        "relationship": "imports"
+      },
+      {
+        "source": "backend/src/controllers/gateway.controller.ts",
+        "target": "backend/src/services/securityPolicy.service.ts",
+        "relationship": "imports"
+      },
+      {
+        "source": "backend/src/controllers/gateway.controller.ts",
+        "target": "backend/src/validators/gateway.validator.ts",
+        "relationship": "imports"
+      },
+      {
+        "source": "backend/src/controllers/project.controller.ts",
+        "target": "backend/src/services/project.service.ts",
+        "relationship": "imports"
+      },
+      {
+        "source": "backend/src/controllers/project.controller.ts",
+        "target": "backend/src/validators/project.validator.ts",
+        "relationship": "imports"
+      },
+      {
+        "source": "backend/src/controllers/rateLimit.controller.ts",
+        "target": "backend/src/services/project.service.ts",
+        "relationship": "imports"
+      },
+      {
+        "source": "backend/src/controllers/rateLimit.controller.ts",
+        "target": "backend/src/services/rateLimit.service.ts",
+        "relationship": "imports"
+      },
+      {
+        "source": "backend/src/controllers/rateLimit.controller.ts",
+        "target": "backend/src/validators/rateLimit.validator.ts",
+        "relationship": "imports"
+      },
+      {
+        "source": "backend/src/controllers/requestLog.controller.ts",
+        "target": "backend/src/services/project.service.ts",
+        "relationship": "imports"
+      },
+      {
+        "source": "backend/src/controllers/requestLog.controller.ts",
+        "target": "backend/src/services/requestLog.service.ts",
+        "relationship": "imports"
+      },
+      {
+        "source": "backend/src/controllers/requestLog.controller.ts",
+        "target": "backend/src/validators/requestLog.validator.ts",
+        "relationship": "imports"
+      },
+      {
+        "source": "backend/src/controllers/securityPolicy.controller.ts",
+        "target": "backend/src/services/project.service.ts",
+        "relationship": "imports"
+      },
+      {
+        "source": "backend/src/controllers/securityPolicy.controller.ts",
+        "target": "backend/src/services/securityPolicy.service.ts",
+        "relationship": "imports"
+      },
+      {
+        "source": "backend/src/controllers/securityPolicy.controller.ts",
+        "target": "backend/src/validators/securityPolicy.validator.ts",
+        "relationship": "imports"
+      },
+      {
+        "source": "backend/src/middleware/apiKeyAuth.ts",
+        "target": "backend/src/services/apiKey.service.ts",
+        "relationship": "imports"
+      },
+      {
+        "source": "backend/src/middleware/apiKeyAuth.ts",
+        "target": "backend/src/utils/apiKey.ts",
+        "relationship": "imports"
+      },
+      {
+        "source": "backend/src/middleware/auth.ts",
+        "target": "backend/src/utils/jwt.ts",
+        "relationship": "imports"
+      },
+      {
+        "source": "backend/src/middleware/rateLimiter.ts",
+        "target": "backend/src/services/rateLimit.service.ts",
+        "relationship": "imports"
+      },
+      {
+        "source": "backend/src/middleware/rateLimiter.ts",
+        "target": "backend/src/services/rateLimiter.service.ts",
+        "relationship": "imports"
+      },
+      {
+        "source": "backend/src/middleware/resourceOwnership.ts",
+        "target": "backend/src/config/prisma.ts",
+        "relationship": "imports"
+      },
+      {
+        "source": "backend/src/routes/analytics.routes.ts",
+        "target": "backend/src/controllers/analytics.controller.ts",
+        "relationship": "imports"
+      },
+      {
+        "source": "backend/src/routes/analytics.routes.ts",
+        "target": "backend/src/middleware/auth.ts",
+        "relationship": "imports"
+      },
+      {
+        "source": "backend/src/routes/analytics.routes.ts",
+        "target": "backend/src/middleware/resourceOwnership.ts",
+        "relationship": "imports"
+      },
+      {
+        "source": "backend/src/routes/apiKey.routes.ts",
+        "target": "backend/src/controllers/apiKey.controller.ts",
+        "relationship": "imports"
+      },
+      {
+        "source": "backend/src/routes/apiKey.routes.ts",
+        "target": "backend/src/middleware/auth.ts",
+        "relationship": "imports"
+      },
+      {
+        "source": "backend/src/routes/apiKey.routes.ts",
+        "target": "backend/src/middleware/resourceOwnership.ts",
+        "relationship": "imports"
+      },
+      {
+        "source": "backend/src/routes/auth.routes.ts",
+        "target": "backend/src/controllers/auth.controller.ts",
+        "relationship": "imports"
+      },
+      {
+        "source": "backend/src/routes/auth.routes.ts",
+        "target": "backend/src/middleware/auth.ts",
+        "relationship": "imports"
+      },
+      {
+        "source": "backend/src/routes/database.routes.ts",
+        "target": "backend/src/controllers/database.controller.ts",
+        "relationship": "imports"
+      },
+      {
+        "source": "backend/src/routes/gateway.routes.ts",
+        "target": "backend/src/controllers/gateway.controller.ts",
+        "relationship": "imports"
+      },
+      {
+        "source": "backend/src/routes/gateway.routes.ts",
+        "target": "backend/src/middleware/apiKeyAuth.ts",
+        "relationship": "imports"
+      },
+      {
+        "source": "backend/src/routes/gateway.routes.ts",
+        "target": "backend/src/middleware/rateLimiter.ts",
+        "relationship": "imports"
+      },
+      {
+        "source": "backend/src/routes/health.routes.ts",
+        "target": "backend/src/controllers/health.controller.ts",
+        "relationship": "imports"
+      },
+      {
+        "source": "backend/src/routes/project.routes.ts",
+        "target": "backend/src/controllers/project.controller.ts",
+        "relationship": "imports"
+      },
+      {
+        "source": "backend/src/routes/project.routes.ts",
+        "target": "backend/src/middleware/auth.ts",
+        "relationship": "imports"
+      },
+      {
+        "source": "backend/src/routes/rateLimit.routes.ts",
+        "target": "backend/src/controllers/rateLimit.controller.ts",
+        "relationship": "imports"
+      },
+      {
+        "source": "backend/src/routes/rateLimit.routes.ts",
+        "target": "backend/src/middleware/auth.ts",
+        "relationship": "imports"
+      },
+      {
+        "source": "backend/src/routes/rateLimit.routes.ts",
+        "target": "backend/src/middleware/resourceOwnership.ts",
+        "relationship": "imports"
+      },
+      {
+        "source": "backend/src/routes/requestLog.routes.ts",
+        "target": "backend/src/controllers/requestLog.controller.ts",
+        "relationship": "imports"
+      },
+      {
+        "source": "backend/src/routes/requestLog.routes.ts",
+        "target": "backend/src/middleware/auth.ts",
+        "relationship": "imports"
+      },
+      {
+        "source": "backend/src/routes/requestLog.routes.ts",
+        "target": "backend/src/middleware/resourceOwnership.ts",
+        "relationship": "imports"
+      },
+      {
+        "source": "backend/src/routes/securityPolicy.routes.ts",
+        "target": "backend/src/controllers/securityPolicy.controller.ts",
+        "relationship": "imports"
+      },
+      {
+        "source": "backend/src/routes/securityPolicy.routes.ts",
+        "target": "backend/src/middleware/auth.ts",
+        "relationship": "imports"
+      },
+      {
+        "source": "backend/src/routes/securityPolicy.routes.ts",
+        "target": "backend/src/middleware/resourceOwnership.ts",
+        "relationship": "imports"
+      },
+      {
+        "source": "backend/src/security/maskSensitiveData.ts",
+        "target": "backend/src/security/policyEngine.ts",
+        "relationship": "imports"
+      },
+      {
+        "source": "backend/src/security/outputScanner.ts",
+        "target": "backend/src/security/promptScanner.ts",
+        "relationship": "imports"
+      },
+      {
+        "source": "backend/src/security/policyEngine.ts",
+        "target": "backend/src/security/promptScanner.ts",
+        "relationship": "imports"
+      },
+      {
+        "source": "backend/src/server.ts",
+        "target": "backend/src/app.ts",
+        "relationship": "imports"
+      },
+      {
+        "source": "backend/src/server.ts",
+        "target": "backend/src/config/env.ts",
+        "relationship": "imports"
+      },
+      {
+        "source": "backend/src/server.ts",
+        "target": "backend/src/config/prisma.ts",
+        "relationship": "imports"
+      },
+      {
+        "source": "backend/src/server.ts",
+        "target": "backend/src/config/redis.ts",
+        "relationship": "imports"
+      },
+      {
+        "source": "backend/src/services/analytics.service.ts",
+        "target": "backend/src/config/prisma.ts",
+        "relationship": "imports"
+      },
+      {
+        "source": "backend/src/services/apiKey.service.ts",
+        "target": "backend/src/config/prisma.ts",
+        "relationship": "imports"
+      },
+      {
+        "source": "backend/src/services/auth.service.ts",
+        "target": "backend/src/config/prisma.ts",
+        "relationship": "imports"
+      },
+      {
+        "source": "backend/src/services/llm.service.ts",
+        "target": "backend/src/config/env.ts",
+        "relationship": "imports"
+      },
+      {
+        "source": "backend/src/services/llm.service.ts",
+        "target": "backend/src/config/groq.ts",
+        "relationship": "imports"
+      },
+      {
+        "source": "backend/src/services/llm.service.ts",
+        "target": "backend/src/utils/costCalculator.ts",
+        "relationship": "imports"
+      },
+      {
+        "source": "backend/src/services/project.service.ts",
+        "target": "backend/src/config/prisma.ts",
+        "relationship": "imports"
+      },
+      {
+        "source": "backend/src/services/rateLimit.service.ts",
+        "target": "backend/src/config/prisma.ts",
+        "relationship": "imports"
+      },
+      {
+        "source": "backend/src/services/rateLimiter.service.ts",
+        "target": "backend/src/config/redis.ts",
+        "relationship": "imports"
+      },
+      {
+        "source": "backend/src/services/requestLog.service.ts",
+        "target": "backend/src/config/prisma.ts",
+        "relationship": "imports"
+      },
+      {
+        "source": "backend/src/services/securityPolicy.service.ts",
+        "target": "backend/src/config/prisma.ts",
+        "relationship": "imports"
+      },
+      {
+        "source": "backend/src/utils/jwt.ts",
+        "target": "backend/src/config/env.ts",
+        "relationship": "imports"
+      },
+      {
+        "source": "frontend/src/App.tsx",
+        "target": "frontend/src/routes/AppRoutes.tsx",
+        "relationship": "imports"
+      },
+      {
+        "source": "frontend/src/components/analytics/ModelUsageChart.tsx",
+        "target": "frontend/src/services/analytics.service.ts",
+        "relationship": "imports"
+      },
+      {
+        "source": "frontend/src/components/analytics/RequestTrendChart.tsx",
+        "target": "frontend/src/services/analytics.service.ts",
+        "relationship": "imports"
+      },
+      {
+        "source": "frontend/src/components/analytics/StatusDistributionChart.tsx",
+        "target": "frontend/src/services/analytics.service.ts",
+        "relationship": "imports"
+      },
+      {
+        "source": "frontend/src/components/analytics/TopProjectTable.tsx",
+        "target": "frontend/src/data/mockData.ts",
+        "relationship": "imports"
+      },
+      {
+        "source": "frontend/src/components/api-keys/ApiKeyRow.tsx",
+        "target": "frontend/src/types/index.ts",
+        "relationship": "imports"
+      },
+      {
+        "source": "frontend/src/components/api-keys/CreateApiKeyModal.tsx",
+        "target": "frontend/src/hooks/useProjects.tsx",
+        "relationship": "imports"
+      },
+      {
+        "source": "frontend/src/components/api-keys/CreateApiKeyModal.tsx",
+        "target": "frontend/src/types/index.ts",
+        "relationship": "imports"
+      },
+      {
+        "source": "frontend/src/components/auth/ProtectedRoute.tsx",
+        "target": "frontend/src/hooks/useAuth.ts",
+        "relationship": "imports"
+      },
+      {
+        "source": "frontend/src/components/dashboard/RecentRequests.tsx",
+        "target": "frontend/src/data/mockData.ts",
+        "relationship": "imports"
+      },
+      {
+        "source": "frontend/src/components/dashboard/RequestsChart.tsx",
+        "target": "frontend/src/data/mockData.ts",
+        "relationship": "imports"
+      },
+      {
+        "source": "frontend/src/components/dashboard/SecurityAlerts.tsx",
+        "target": "frontend/src/data/mockData.ts",
+        "relationship": "imports"
+      },
+      {
+        "source": "frontend/src/components/layout/Header.tsx",
+        "target": "frontend/src/hooks/useAuth.ts",
+        "relationship": "imports"
+      },
+      {
+        "source": "frontend/src/components/playground/GatewayResponse.tsx",
+        "target": "frontend/src/types/index.ts",
+        "relationship": "imports"
+      },
+      {
+        "source": "frontend/src/components/playground/SecurityChecks.tsx",
+        "target": "frontend/src/types/index.ts",
+        "relationship": "imports"
+      },
+      {
+        "source": "frontend/src/components/projects/ProjectCard.tsx",
+        "target": "frontend/src/types/index.ts",
+        "relationship": "imports"
+      },
+      {
+        "source": "frontend/src/components/security/PolicySummary.tsx",
+        "target": "frontend/src/types/index.ts",
+        "relationship": "imports"
+      },
+      {
+        "source": "frontend/src/components/security/SecurityRuleCard.tsx",
+        "target": "frontend/src/types/index.ts",
+        "relationship": "imports"
+      },
+      {
+        "source": "frontend/src/context/ApiKeysContext.tsx",
+        "target": "frontend/src/hooks/useAuth.ts",
+        "relationship": "imports"
+      },
+      {
+        "source": "frontend/src/context/ApiKeysContext.tsx",
+        "target": "frontend/src/hooks/useProjects.tsx",
+        "relationship": "imports"
+      },
+      {
+        "source": "frontend/src/context/ApiKeysContext.tsx",
+        "target": "frontend/src/lib/api.ts",
+        "relationship": "imports"
+      },
+      {
+        "source": "frontend/src/context/ApiKeysContext.tsx",
+        "target": "frontend/src/types/index.ts",
+        "relationship": "imports"
+      },
+      {
+        "source": "frontend/src/context/AuthContext.tsx",
+        "target": "frontend/src/lib/api.ts",
+        "relationship": "imports"
+      },
+      {
+        "source": "frontend/src/context/AuthContext.tsx",
+        "target": "frontend/src/types/index.ts",
+        "relationship": "imports"
+      },
+      {
+        "source": "frontend/src/context/ProjectsContext.tsx",
+        "target": "frontend/src/hooks/useAuth.ts",
+        "relationship": "imports"
+      },
+      {
+        "source": "frontend/src/context/ProjectsContext.tsx",
+        "target": "frontend/src/lib/api.ts",
+        "relationship": "imports"
+      },
+      {
+        "source": "frontend/src/context/ProjectsContext.tsx",
+        "target": "frontend/src/types/index.ts",
+        "relationship": "imports"
+      },
+      {
+        "source": "frontend/src/context/RateLimitsContext.tsx",
+        "target": "frontend/src/hooks/useAuth.ts",
+        "relationship": "imports"
+      },
+      {
+        "source": "frontend/src/context/RateLimitsContext.tsx",
+        "target": "frontend/src/hooks/useProjects.tsx",
+        "relationship": "imports"
+      },
+      {
+        "source": "frontend/src/context/RateLimitsContext.tsx",
+        "target": "frontend/src/lib/api.ts",
+        "relationship": "imports"
+      },
+      {
+        "source": "frontend/src/context/SecurityPoliciesContext.tsx",
+        "target": "frontend/src/hooks/useAuth.ts",
+        "relationship": "imports"
+      },
+      {
+        "source": "frontend/src/context/SecurityPoliciesContext.tsx",
+        "target": "frontend/src/hooks/useProjects.tsx",
+        "relationship": "imports"
+      },
+      {
+        "source": "frontend/src/context/SecurityPoliciesContext.tsx",
+        "target": "frontend/src/lib/api.ts",
+        "relationship": "imports"
+      },
+      {
+        "source": "frontend/src/data/mockData.ts",
+        "target": "frontend/src/types/index.ts",
+        "relationship": "imports"
+      },
+      {
+        "source": "frontend/src/hooks/useApiKeys.ts",
+        "target": "frontend/src/context/ApiKeysContext.tsx",
+        "relationship": "imports"
+      },
+      {
+        "source": "frontend/src/hooks/useAuth.ts",
+        "target": "frontend/src/context/AuthContext.tsx",
+        "relationship": "imports"
+      },
+      {
+        "source": "frontend/src/hooks/useProjects.tsx",
+        "target": "frontend/src/context/ProjectsContext.tsx",
+        "relationship": "imports"
+      },
+      {
+        "source": "frontend/src/hooks/useRateLimits.ts",
+        "target": "frontend/src/context/RateLimitsContext.tsx",
+        "relationship": "imports"
+      },
+      {
+        "source": "frontend/src/hooks/useSecurityPolicies.ts",
+        "target": "frontend/src/context/SecurityPoliciesContext.tsx",
+        "relationship": "imports"
+      },
+      {
+        "source": "frontend/src/layouts/DashboardLayout.tsx",
+        "target": "frontend/src/components/layout/Header.tsx",
+        "relationship": "imports"
+      },
+      {
+        "source": "frontend/src/layouts/DashboardLayout.tsx",
+        "target": "frontend/src/components/layout/MobileSidebar.tsx",
+        "relationship": "imports"
+      },
+      {
+        "source": "frontend/src/layouts/DashboardLayout.tsx",
+        "target": "frontend/src/components/layout/Sidebar.tsx",
+        "relationship": "imports"
+      },
+      {
+        "source": "frontend/src/main.tsx",
+        "target": "frontend/src/App.tsx",
+        "relationship": "imports"
+      },
+      {
+        "source": "frontend/src/main.tsx",
+        "target": "frontend/src/context/ApiKeysContext.tsx",
+        "relationship": "imports"
+      },
+      {
+        "source": "frontend/src/main.tsx",
+        "target": "frontend/src/context/AuthContext.tsx",
+        "relationship": "imports"
+      },
+      {
+        "source": "frontend/src/main.tsx",
+        "target": "frontend/src/context/ProjectsContext.tsx",
+        "relationship": "imports"
+      },
+      {
+        "source": "frontend/src/main.tsx",
+        "target": "frontend/src/context/RateLimitsContext.tsx",
+        "relationship": "imports"
+      },
+      {
+        "source": "frontend/src/main.tsx",
+        "target": "frontend/src/context/SecurityPoliciesContext.tsx",
+        "relationship": "imports"
+      },
+      {
+        "source": "frontend/src/pages/AnalyticsPage.tsx",
+        "target": "frontend/src/components/analytics/AnalyticsMetricCard.tsx",
+        "relationship": "imports"
+      },
+      {
+        "source": "frontend/src/pages/AnalyticsPage.tsx",
+        "target": "frontend/src/components/analytics/ModelUsageChart.tsx",
+        "relationship": "imports"
+      },
+      {
+        "source": "frontend/src/pages/AnalyticsPage.tsx",
+        "target": "frontend/src/components/analytics/RequestTrendChart.tsx",
+        "relationship": "imports"
+      },
+      {
+        "source": "frontend/src/pages/AnalyticsPage.tsx",
+        "target": "frontend/src/components/analytics/StatusDistributionChart.tsx",
+        "relationship": "imports"
+      },
+      {
+        "source": "frontend/src/pages/AnalyticsPage.tsx",
+        "target": "frontend/src/hooks/useProjects.tsx",
+        "relationship": "imports"
+      },
+      {
+        "source": "frontend/src/pages/AnalyticsPage.tsx",
+        "target": "frontend/src/services/analytics.service.ts",
+        "relationship": "imports"
+      },
+      {
+        "source": "frontend/src/pages/ApiKeysPage.tsx",
+        "target": "frontend/src/components/api-keys/ApiKeyRow.tsx",
+        "relationship": "imports"
+      },
+      {
+        "source": "frontend/src/pages/ApiKeysPage.tsx",
+        "target": "frontend/src/components/api-keys/ApiKeySecretModal.tsx",
+        "relationship": "imports"
+      },
+      {
+        "source": "frontend/src/pages/ApiKeysPage.tsx",
+        "target": "frontend/src/components/api-keys/CreateApiKeyModal.tsx",
+        "relationship": "imports"
+      },
+      {
+        "source": "frontend/src/pages/ApiKeysPage.tsx",
+        "target": "frontend/src/hooks/useApiKeys.ts",
+        "relationship": "imports"
+      },
+      {
+        "source": "frontend/src/pages/ApiKeysPage.tsx",
+        "target": "frontend/src/types/index.ts",
+        "relationship": "imports"
+      },
+      {
+        "source": "frontend/src/pages/LoginPage.tsx",
+        "target": "frontend/src/hooks/useAuth.ts",
+        "relationship": "imports"
+      },
+      {
+        "source": "frontend/src/pages/OverviewPage.tsx",
+        "target": "frontend/src/components/dashboard/MetricCard.tsx",
+        "relationship": "imports"
+      },
+      {
+        "source": "frontend/src/pages/OverviewPage.tsx",
+        "target": "frontend/src/components/dashboard/RecentRequests.tsx",
+        "relationship": "imports"
+      },
+      {
+        "source": "frontend/src/pages/OverviewPage.tsx",
+        "target": "frontend/src/components/dashboard/RequestsChart.tsx",
+        "relationship": "imports"
+      },
+      {
+        "source": "frontend/src/pages/OverviewPage.tsx",
+        "target": "frontend/src/components/dashboard/SecurityAlerts.tsx",
+        "relationship": "imports"
+      },
+      {
+        "source": "frontend/src/pages/PlaygroundPage.tsx",
+        "target": "frontend/src/components/playground/GatewayResponse.tsx",
+        "relationship": "imports"
+      },
+      {
+        "source": "frontend/src/pages/PlaygroundPage.tsx",
+        "target": "frontend/src/components/playground/SecurityChecks.tsx",
+        "relationship": "imports"
+      },
+      {
+        "source": "frontend/src/pages/PlaygroundPage.tsx",
+        "target": "frontend/src/services/gateway.service.ts",
+        "relationship": "imports"
+      },
+      {
+        "source": "frontend/src/pages/PlaygroundPage.tsx",
+        "target": "frontend/src/types/index.ts",
+        "relationship": "imports"
+      },
+      {
+        "source": "frontend/src/pages/ProjectDetailsPage.tsx",
+        "target": "frontend/src/hooks/useProjects.tsx",
+        "relationship": "imports"
+      },
+      {
+        "source": "frontend/src/pages/ProjectsPage.tsx",
+        "target": "frontend/src/components/projects/CreateProjectModal.tsx",
+        "relationship": "imports"
+      },
+      {
+        "source": "frontend/src/pages/ProjectsPage.tsx",
+        "target": "frontend/src/components/projects/ProjectCard.tsx",
+        "relationship": "imports"
+      },
+      {
+        "source": "frontend/src/pages/ProjectsPage.tsx",
+        "target": "frontend/src/hooks/useProjects.tsx",
+        "relationship": "imports"
+      },
+      {
+        "source": "frontend/src/pages/ProjectsPage.tsx",
+        "target": "frontend/src/types/index.ts",
+        "relationship": "imports"
+      },
+      {
+        "source": "frontend/src/pages/RateLimitsPage.tsx",
+        "target": "frontend/src/hooks/useProjects.tsx",
+        "relationship": "imports"
+      },
+      {
+        "source": "frontend/src/pages/RateLimitsPage.tsx",
+        "target": "frontend/src/hooks/useRateLimits.ts",
+        "relationship": "imports"
+      },
+      {
+        "source": "frontend/src/pages/RegisterPage.tsx",
+        "target": "frontend/src/hooks/useAuth.ts",
+        "relationship": "imports"
+      },
+      {
+        "source": "frontend/src/pages/RequestDetailsPage.tsx",
+        "target": "frontend/src/services/logs.service.ts",
+        "relationship": "imports"
+      },
+      {
+        "source": "frontend/src/pages/RequestDetailsPage.tsx",
+        "target": "frontend/src/types/index.ts",
+        "relationship": "imports"
+      },
+      {
+        "source": "frontend/src/pages/RequestLogsPage.tsx",
+        "target": "frontend/src/hooks/useProjects.tsx",
+        "relationship": "imports"
+      },
+      {
+        "source": "frontend/src/pages/RequestLogsPage.tsx",
+        "target": "frontend/src/services/logs.service.ts",
+        "relationship": "imports"
+      },
+      {
+        "source": "frontend/src/pages/RequestLogsPage.tsx",
+        "target": "frontend/src/types/index.ts",
+        "relationship": "imports"
+      },
+      {
+        "source": "frontend/src/pages/SecurityRulesPage.tsx",
+        "target": "frontend/src/context/SecurityPoliciesContext.tsx",
+        "relationship": "imports"
+      },
+      {
+        "source": "frontend/src/pages/SecurityRulesPage.tsx",
+        "target": "frontend/src/hooks/useProjects.tsx",
+        "relationship": "imports"
+      },
+      {
+        "source": "frontend/src/pages/SecurityRulesPage.tsx",
+        "target": "frontend/src/hooks/useSecurityPolicies.ts",
+        "relationship": "imports"
+      },
+      {
+        "source": "frontend/src/routes/AppRoutes.tsx",
+        "target": "frontend/src/components/auth/ProtectedRoute.tsx",
+        "relationship": "imports"
+      },
+      {
+        "source": "frontend/src/routes/AppRoutes.tsx",
+        "target": "frontend/src/layouts/AuthLayout.tsx",
+        "relationship": "imports"
+      },
+      {
+        "source": "frontend/src/routes/AppRoutes.tsx",
+        "target": "frontend/src/layouts/DashboardLayout.tsx",
+        "relationship": "imports"
+      },
+      {
+        "source": "frontend/src/routes/AppRoutes.tsx",
+        "target": "frontend/src/pages/AnalyticsPage.tsx",
+        "relationship": "imports"
+      },
+      {
+        "source": "frontend/src/routes/AppRoutes.tsx",
+        "target": "frontend/src/pages/ApiKeysPage.tsx",
+        "relationship": "imports"
+      },
+      {
+        "source": "frontend/src/routes/AppRoutes.tsx",
+        "target": "frontend/src/pages/LoginPage.tsx",
+        "relationship": "imports"
+      },
+      {
+        "source": "frontend/src/routes/AppRoutes.tsx",
+        "target": "frontend/src/pages/NotFoundPage.tsx",
+        "relationship": "imports"
+      },
+      {
+        "source": "frontend/src/routes/AppRoutes.tsx",
+        "target": "frontend/src/pages/OverviewPage.tsx",
+        "relationship": "imports"
+      },
+      {
+        "source": "frontend/src/routes/AppRoutes.tsx",
+        "target": "frontend/src/pages/PlaygroundPage.tsx",
+        "relationship": "imports"
+      },
+      {
+        "source": "frontend/src/routes/AppRoutes.tsx",
+        "target": "frontend/src/pages/ProjectDetailsPage.tsx",
+        "relationship": "imports"
+      },
+      {
+        "source": "frontend/src/routes/AppRoutes.tsx",
+        "target": "frontend/src/pages/ProjectsPage.tsx",
+        "relationship": "imports"
+      },
+      {
+        "source": "frontend/src/routes/AppRoutes.tsx",
+        "target": "frontend/src/pages/RateLimitsPage.tsx",
+        "relationship": "imports"
+      },
+      {
+        "source": "frontend/src/routes/AppRoutes.tsx",
+        "target": "frontend/src/pages/RegisterPage.tsx",
+        "relationship": "imports"
+      },
+      {
+        "source": "frontend/src/routes/AppRoutes.tsx",
+        "target": "frontend/src/pages/RequestDetailsPage.tsx",
+        "relationship": "imports"
+      },
+      {
+        "source": "frontend/src/routes/AppRoutes.tsx",
+        "target": "frontend/src/pages/RequestLogsPage.tsx",
+        "relationship": "imports"
+      },
+      {
+        "source": "frontend/src/routes/AppRoutes.tsx",
+        "target": "frontend/src/pages/SecurityRulesPage.tsx",
+        "relationship": "imports"
+      },
+      {
+        "source": "frontend/src/routes/AppRoutes.tsx",
+        "target": "frontend/src/pages/SettingsPage.tsx",
+        "relationship": "imports"
+      },
+      {
+        "source": "frontend/src/services/analytics.service.ts",
+        "target": "frontend/src/lib/api.ts",
+        "relationship": "imports"
+      },
+      {
+        "source": "frontend/src/services/gateway.service.ts",
+        "target": "frontend/src/lib/api.ts",
+        "relationship": "imports"
+      },
+      {
+        "source": "frontend/src/services/gateway.service.ts",
+        "target": "frontend/src/types/index.ts",
+        "relationship": "imports"
+      },
+      {
+        "source": "frontend/src/services/logs.service.ts",
+        "target": "frontend/src/lib/api.ts",
+        "relationship": "imports"
+      },
+      {
+        "source": "frontend/src/services/logs.service.ts",
+        "target": "frontend/src/types/index.ts",
+        "relationship": "imports"
+      }
+    ],
+    "external_dependencies": [
+      {
+        "name": "@eslint/js",
+        "used_by": [
+          "frontend/eslint.config.js"
+        ]
+      },
+      {
+        "name": "@prisma/client",
+        "used_by": [
+          "backend/src/config/prisma.ts",
+          "backend/src/services/requestLog.service.ts"
+        ]
+      },
+      {
+        "name": "@tailwindcss/vite",
+        "used_by": [
+          "frontend/vite.config.ts"
+        ]
+      },
+      {
+        "name": "@vitejs/plugin-react",
+        "used_by": [
+          "frontend/vite.config.ts"
+        ]
+      },
+      {
+        "name": "axios",
+        "used_by": [
+          "frontend/src/context/ApiKeysContext.tsx",
+          "frontend/src/context/AuthContext.tsx",
+          "frontend/src/context/ProjectsContext.tsx",
+          "frontend/src/context/RateLimitsContext.tsx",
+          "frontend/src/context/SecurityPoliciesContext.tsx",
+          "frontend/src/lib/api.ts",
+          "frontend/src/services/gateway.service.ts"
+        ]
+      },
+      {
+        "name": "bcryptjs",
+        "used_by": [
+          "backend/src/services/auth.service.ts"
+        ]
+      },
+      {
+        "name": "cors",
+        "used_by": [
+          "backend/src/app.ts"
+        ]
+      },
+      {
+        "name": "dotenv",
+        "used_by": [
+          "backend/prisma.config.ts",
+          "backend/src/config/env.ts"
+        ]
+      },
+      {
+        "name": "eslint",
+        "used_by": [
+          "frontend/eslint.config.js"
+        ]
+      },
+      {
+        "name": "eslint-plugin-react-hooks",
+        "used_by": [
+          "frontend/eslint.config.js"
+        ]
+      },
+      {
+        "name": "eslint-plugin-react-refresh",
+        "used_by": [
+          "frontend/eslint.config.js"
+        ]
+      },
+      {
+        "name": "express",
+        "used_by": [
+          "backend/src/app.ts",
+          "backend/src/controllers/analytics.controller.ts",
+          "backend/src/controllers/apiKey.controller.ts",
+          "backend/src/controllers/auth.controller.ts",
+          "backend/src/controllers/database.controller.ts",
+          "backend/src/controllers/gateway.controller.ts",
+          "backend/src/controllers/health.controller.ts",
+          "backend/src/controllers/project.controller.ts",
+          "backend/src/controllers/rateLimit.controller.ts",
+          "backend/src/controllers/requestLog.controller.ts",
+          "backend/src/controllers/securityPolicy.controller.ts",
+          "backend/src/middleware/apiKeyAuth.ts",
+          "backend/src/middleware/auth.ts",
+          "backend/src/middleware/errorHandler.ts",
+          "backend/src/middleware/rateLimiter.ts",
+          "backend/src/middleware/resourceOwnership.ts",
+          "backend/src/routes/analytics.routes.ts",
+          "backend/src/routes/apiKey.routes.ts",
+          "backend/src/routes/auth.routes.ts",
+          "backend/src/routes/database.routes.ts",
+          "backend/src/routes/gateway.routes.ts",
+          "backend/src/routes/health.routes.ts",
+          "backend/src/routes/project.routes.ts",
+          "backend/src/routes/rateLimit.routes.ts",
+          "backend/src/routes/requestLog.routes.ts",
+          "backend/src/routes/securityPolicy.routes.ts"
+        ]
+      },
+      {
+        "name": "globals",
+        "used_by": [
+          "frontend/eslint.config.js"
+        ]
+      },
+      {
+        "name": "groq-sdk",
+        "used_by": [
+          "backend/src/config/groq.ts"
+        ]
+      },
+      {
+        "name": "helmet",
+        "used_by": [
+          "backend/src/app.ts"
+        ]
+      },
+      {
+        "name": "jsonwebtoken",
+        "used_by": [
+          "backend/src/utils/jwt.ts"
+        ]
+      },
+      {
+        "name": "lucide-react",
+        "used_by": [
+          "frontend/src/components/analytics/AnalyticsMetricCard.tsx",
+          "frontend/src/components/api-keys/ApiKeyRow.tsx",
+          "frontend/src/components/api-keys/ApiKeySecretModal.tsx",
+          "frontend/src/components/api-keys/CreateApiKeyModal.tsx",
+          "frontend/src/components/auth/ProtectedRoute.tsx",
+          "frontend/src/components/dashboard/MetricCard.tsx",
+          "frontend/src/components/dashboard/RecentRequests.tsx",
+          "frontend/src/components/dashboard/SecurityAlerts.tsx",
+          "frontend/src/components/layout/Header.tsx",
+          "frontend/src/components/layout/MobileSidebar.tsx",
+          "frontend/src/components/layout/Sidebar.tsx",
+          "frontend/src/components/playground/GatewayResponse.tsx",
+          "frontend/src/components/playground/SecurityChecks.tsx",
+          "frontend/src/components/projects/CreateProjectModal.tsx",
+          "frontend/src/components/projects/ProjectCard.tsx",
+          "frontend/src/components/security/PolicySummary.tsx",
+          "frontend/src/components/security/SecurityRuleCard.tsx",
+          "frontend/src/layouts/AuthLayout.tsx",
+          "frontend/src/pages/AnalyticsPage.tsx",
+          "frontend/src/pages/ApiKeysPage.tsx",
+          "frontend/src/pages/LoginPage.tsx",
+          "frontend/src/pages/OverviewPage.tsx",
+          "frontend/src/pages/PlaygroundPage.tsx",
+          "frontend/src/pages/ProjectDetailsPage.tsx",
+          "frontend/src/pages/ProjectsPage.tsx",
+          "frontend/src/pages/RateLimitsPage.tsx",
+          "frontend/src/pages/RegisterPage.tsx",
+          "frontend/src/pages/RequestDetailsPage.tsx",
+          "frontend/src/pages/RequestLogsPage.tsx",
+          "frontend/src/pages/SecurityRulesPage.tsx",
+          "frontend/src/pages/SettingsPage.tsx"
+        ]
+      },
+      {
+        "name": "node:crypto",
+        "used_by": [
+          "backend/src/utils/apiKey.ts"
+        ]
+      },
+      {
+        "name": "prisma",
+        "used_by": [
+          "backend/prisma.config.ts"
+        ]
+      },
+      {
+        "name": "react",
+        "used_by": [
+          "frontend/src/components/api-keys/ApiKeySecretModal.tsx",
+          "frontend/src/components/api-keys/CreateApiKeyModal.tsx",
+          "frontend/src/components/layout/Header.tsx",
+          "frontend/src/components/layout/MobileSidebar.tsx",
+          "frontend/src/components/projects/CreateProjectModal.tsx",
+          "frontend/src/context/ApiKeysContext.tsx",
+          "frontend/src/context/AuthContext.tsx",
+          "frontend/src/context/ProjectsContext.tsx",
+          "frontend/src/context/RateLimitsContext.tsx",
+          "frontend/src/context/SecurityPoliciesContext.tsx",
+          "frontend/src/hooks/useApiKeys.ts",
+          "frontend/src/hooks/useAuth.ts",
+          "frontend/src/hooks/useProjects.tsx",
+          "frontend/src/hooks/useRateLimits.ts",
+          "frontend/src/hooks/useSecurityPolicies.ts",
+          "frontend/src/layouts/DashboardLayout.tsx",
+          "frontend/src/main.tsx",
+          "frontend/src/pages/AnalyticsPage.tsx",
+          "frontend/src/pages/ApiKeysPage.tsx",
+          "frontend/src/pages/LoginPage.tsx",
+          "frontend/src/pages/PlaygroundPage.tsx",
+          "frontend/src/pages/ProjectsPage.tsx",
+          "frontend/src/pages/RateLimitsPage.tsx",
+          "frontend/src/pages/RegisterPage.tsx",
+          "frontend/src/pages/RequestDetailsPage.tsx",
+          "frontend/src/pages/RequestLogsPage.tsx",
+          "frontend/src/pages/SecurityRulesPage.tsx",
+          "frontend/src/pages/SettingsPage.tsx"
+        ]
+      },
+      {
+        "name": "react-dom",
+        "used_by": [
+          "frontend/src/main.tsx"
+        ]
+      },
+      {
+        "name": "react-markdown",
+        "used_by": [
+          "frontend/src/components/playground/GatewayResponse.tsx"
+        ]
+      },
+      {
+        "name": "react-router-dom",
+        "used_by": [
+          "frontend/src/components/auth/ProtectedRoute.tsx",
+          "frontend/src/components/layout/Header.tsx",
+          "frontend/src/components/layout/MobileSidebar.tsx",
+          "frontend/src/components/layout/Sidebar.tsx",
+          "frontend/src/components/projects/ProjectCard.tsx",
+          "frontend/src/layouts/AuthLayout.tsx",
+          "frontend/src/layouts/DashboardLayout.tsx",
+          "frontend/src/main.tsx",
+          "frontend/src/pages/LoginPage.tsx",
+          "frontend/src/pages/ProjectDetailsPage.tsx",
+          "frontend/src/pages/RegisterPage.tsx",
+          "frontend/src/pages/RequestDetailsPage.tsx",
+          "frontend/src/pages/RequestLogsPage.tsx",
+          "frontend/src/routes/AppRoutes.tsx"
+        ]
+      },
+      {
+        "name": "recharts",
+        "used_by": [
+          "frontend/src/components/analytics/ModelUsageChart.tsx",
+          "frontend/src/components/analytics/RequestTrendChart.tsx",
+          "frontend/src/components/analytics/StatusDistributionChart.tsx",
+          "frontend/src/components/dashboard/RequestsChart.tsx"
+        ]
+      },
+      {
+        "name": "redis",
+        "used_by": [
+          "backend/src/config/redis.ts"
+        ]
+      },
+      {
+        "name": "remark-gfm",
+        "used_by": [
+          "frontend/src/components/playground/GatewayResponse.tsx"
+        ]
+      },
+      {
+        "name": "sonner",
+        "used_by": [
+          "frontend/src/components/api-keys/ApiKeySecretModal.tsx",
+          "frontend/src/components/layout/Header.tsx",
+          "frontend/src/main.tsx",
+          "frontend/src/pages/ApiKeysPage.tsx",
+          "frontend/src/pages/LoginPage.tsx",
+          "frontend/src/pages/PlaygroundPage.tsx",
+          "frontend/src/pages/ProjectsPage.tsx",
+          "frontend/src/pages/RateLimitsPage.tsx",
+          "frontend/src/pages/RegisterPage.tsx",
+          "frontend/src/pages/SecurityRulesPage.tsx",
+          "frontend/src/pages/SettingsPage.tsx"
+        ]
+      },
+      {
+        "name": "typescript-eslint",
+        "used_by": [
+          "frontend/eslint.config.js"
+        ]
+      },
+      {
+        "name": "vite",
+        "used_by": [
+          "frontend/vite.config.ts"
+        ]
+      },
+      {
+        "name": "zod",
+        "used_by": [
+          "backend/src/config/env.ts",
+          "backend/src/validators/analytics.validator.ts",
+          "backend/src/validators/apiKey.validator.ts",
+          "backend/src/validators/auth.validator.ts",
+          "backend/src/validators/gateway.validator.ts",
+          "backend/src/validators/project.validator.ts",
+          "backend/src/validators/rateLimit.validator.ts",
+          "backend/src/validators/requestLog.validator.ts",
+          "backend/src/validators/securityPolicy.validator.ts"
+        ]
+      }
+    ],
+    "frontend_requests": [
+      {
+        "file": "frontend/src/context/ApiKeysContext.tsx",
+        "method": "GET",
+        "endpoint": "/projects/{param}/api-keys",
+        "client": "api"
+      },
+      {
+        "file": "frontend/src/context/ApiKeysContext.tsx",
+        "method": "POST",
+        "endpoint": "/projects/{param}/api-keys",
+        "client": "api"
+      },
+      {
+        "file": "frontend/src/context/ApiKeysContext.tsx",
+        "method": "PATCH",
+        "endpoint": "/api-keys/{param}/revoke",
+        "client": "api"
+      },
+      {
+        "file": "frontend/src/context/AuthContext.tsx",
+        "method": "GET",
+        "endpoint": "/auth/me",
+        "client": "api"
+      },
+      {
+        "file": "frontend/src/context/AuthContext.tsx",
+        "method": "POST",
+        "endpoint": "/auth/login",
+        "client": "api"
+      },
+      {
+        "file": "frontend/src/context/AuthContext.tsx",
+        "method": "POST",
+        "endpoint": "/auth/register",
+        "client": "api"
+      },
+      {
+        "file": "frontend/src/context/ProjectsContext.tsx",
+        "method": "GET",
+        "endpoint": "/projects",
+        "client": "api"
+      },
+      {
+        "file": "frontend/src/context/ProjectsContext.tsx",
+        "method": "POST",
+        "endpoint": "/projects",
+        "client": "api"
+      },
+      {
+        "file": "frontend/src/context/RateLimitsContext.tsx",
+        "method": "GET",
+        "endpoint": "/projects/{param}/rate-limit",
+        "client": "api"
+      },
+      {
+        "file": "frontend/src/context/RateLimitsContext.tsx",
+        "method": "PATCH",
+        "endpoint": "/projects/{param}/rate-limit",
+        "client": "api"
+      },
+      {
+        "file": "frontend/src/context/SecurityPoliciesContext.tsx",
+        "method": "GET",
+        "endpoint": "/projects/{param}/security-policy",
+        "client": "api"
+      },
+      {
+        "file": "frontend/src/context/SecurityPoliciesContext.tsx",
+        "method": "PATCH",
+        "endpoint": "/projects/{param}/security-policy",
+        "client": "api"
+      },
+      {
+        "file": "frontend/src/services/analytics.service.ts",
+        "method": "GET",
+        "endpoint": "/projects/{param}/analytics/summary",
+        "client": "api"
+      },
+      {
+        "file": "frontend/src/services/analytics.service.ts",
+        "method": "GET",
+        "endpoint": "/projects/{param}/analytics/details",
+        "client": "api"
+      },
+      {
+        "file": "frontend/src/services/gateway.service.ts",
+        "method": "POST",
+        "endpoint": "/gateway/chat",
+        "client": "api"
+      },
+      {
+        "file": "frontend/src/services/logs.service.ts",
+        "method": "GET",
+        "endpoint": "/projects/{param}/logs",
+        "client": "api"
+      },
+      {
+        "file": "frontend/src/services/logs.service.ts",
+        "method": "GET",
+        "endpoint": "/logs/{param}",
+        "client": "api"
+      }
+    ],
+    "external_api_calls": [
+      {
+        "file": "backend/src/services/llm.service.ts",
+        "method": "SDK",
+        "endpoint": "sdk://groq",
+        "service": "Groq API",
+        "handler": "generateLLMResponse"
+      }
+    ],
+    "backend_routes": [
+      {
+        "file": "backend/src/routes/analytics.routes.ts",
+        "method": "GET",
+        "endpoint": "/api/projects/:projectId/analytics/summary",
+        "framework": "Express",
+        "handler": "getAnalyticsSummaryController",
+        "controller_file": "backend/src/controllers/analytics.controller.ts"
+      },
+      {
+        "file": "backend/src/routes/analytics.routes.ts",
+        "method": "GET",
+        "endpoint": "/api/projects/:projectId/analytics/details",
+        "framework": "Express",
+        "handler": "getAnalyticsDetailsController",
+        "controller_file": "backend/src/controllers/analytics.controller.ts"
+      },
+      {
+        "file": "backend/src/routes/apiKey.routes.ts",
+        "method": "GET",
+        "endpoint": "/api/projects/:projectId/api-keys",
+        "framework": "Express",
+        "handler": "getApiKeysController",
+        "controller_file": "backend/src/controllers/apiKey.controller.ts"
+      },
+      {
+        "file": "backend/src/routes/apiKey.routes.ts",
+        "method": "POST",
+        "endpoint": "/api/projects/:projectId/api-keys",
+        "framework": "Express",
+        "handler": "createApiKeyController",
+        "controller_file": "backend/src/controllers/apiKey.controller.ts"
+      },
+      {
+        "file": "backend/src/routes/apiKey.routes.ts",
+        "method": "PATCH",
+        "endpoint": "/api/api-keys/:id/revoke",
+        "framework": "Express",
+        "handler": "revokeApiKeyController",
+        "controller_file": "backend/src/controllers/apiKey.controller.ts"
+      },
+      {
+        "file": "backend/src/routes/apiKey.routes.ts",
+        "method": "DELETE",
+        "endpoint": "/api/api-keys/:id",
+        "framework": "Express",
+        "handler": "deleteApiKeyController",
+        "controller_file": "backend/src/controllers/apiKey.controller.ts"
+      },
+      {
+        "file": "backend/src/routes/auth.routes.ts",
+        "method": "GET",
+        "endpoint": "/api/auth/me",
+        "framework": "Express",
+        "handler": "getCurrentUserController",
+        "controller_file": "backend/src/controllers/auth.controller.ts"
+      },
+      {
+        "file": "backend/src/routes/auth.routes.ts",
+        "method": "POST",
+        "endpoint": "/api/auth/register",
+        "framework": "Express",
+        "handler": "registerController",
+        "controller_file": "backend/src/controllers/auth.controller.ts"
+      },
+      {
+        "file": "backend/src/routes/auth.routes.ts",
+        "method": "POST",
+        "endpoint": "/api/auth/login",
+        "framework": "Express",
+        "handler": "loginController",
+        "controller_file": "backend/src/controllers/auth.controller.ts"
+      },
+      {
+        "file": "backend/src/routes/database.routes.ts",
+        "method": "GET",
+        "endpoint": "/api/health/database",
+        "framework": "Express",
+        "handler": "getDatabaseHealth",
+        "controller_file": "backend/src/controllers/database.controller.ts"
+      },
+      {
+        "file": "backend/src/routes/gateway.routes.ts",
+        "method": "GET",
+        "endpoint": "/api/gateway/auth-test",
+        "framework": "Express",
+        "handler": "gatewayAuthTestController",
+        "controller_file": "backend/src/controllers/gateway.controller.ts"
+      },
+      {
+        "file": "backend/src/routes/gateway.routes.ts",
+        "method": "POST",
+        "endpoint": "/api/gateway/scan",
+        "framework": "Express",
+        "handler": "gatewayScanController",
+        "controller_file": "backend/src/controllers/gateway.controller.ts"
+      },
+      {
+        "file": "backend/src/routes/gateway.routes.ts",
+        "method": "POST",
+        "endpoint": "/api/gateway/chat",
+        "framework": "Express",
+        "handler": "gatewayChatController",
+        "controller_file": "backend/src/controllers/gateway.controller.ts"
+      },
+      {
+        "file": "backend/src/routes/health.routes.ts",
+        "method": "GET",
+        "endpoint": "/api/health",
+        "framework": "Express",
+        "handler": "getHealth",
+        "controller_file": "backend/src/controllers/health.controller.ts"
+      },
+      {
+        "file": "backend/src/routes/project.routes.ts",
+        "method": "GET",
+        "endpoint": "/api/projects",
+        "framework": "Express",
+        "handler": "getProjectsController",
+        "controller_file": "backend/src/controllers/project.controller.ts"
+      },
+      {
+        "file": "backend/src/routes/project.routes.ts",
+        "method": "GET",
+        "endpoint": "/api/projects/:id",
+        "framework": "Express",
+        "handler": "getProjectByIdController",
+        "controller_file": "backend/src/controllers/project.controller.ts"
+      },
+      {
+        "file": "backend/src/routes/project.routes.ts",
+        "method": "POST",
+        "endpoint": "/api/projects",
+        "framework": "Express",
+        "handler": "createProjectController",
+        "controller_file": "backend/src/controllers/project.controller.ts"
+      },
+      {
+        "file": "backend/src/routes/project.routes.ts",
+        "method": "PATCH",
+        "endpoint": "/api/projects/:id",
+        "framework": "Express",
+        "handler": "updateProjectController",
+        "controller_file": "backend/src/controllers/project.controller.ts"
+      },
+      {
+        "file": "backend/src/routes/project.routes.ts",
+        "method": "DELETE",
+        "endpoint": "/api/projects/:id",
+        "framework": "Express",
+        "handler": "deleteProjectController",
+        "controller_file": "backend/src/controllers/project.controller.ts"
+      },
+      {
+        "file": "backend/src/routes/rateLimit.routes.ts",
+        "method": "GET",
+        "endpoint": "/api/projects/:projectId/rate-limit",
+        "framework": "Express",
+        "handler": "getRateLimitController",
+        "controller_file": "backend/src/controllers/rateLimit.controller.ts"
+      },
+      {
+        "file": "backend/src/routes/rateLimit.routes.ts",
+        "method": "PATCH",
+        "endpoint": "/api/projects/:projectId/rate-limit",
+        "framework": "Express",
+        "handler": "updateRateLimitController",
+        "controller_file": "backend/src/controllers/rateLimit.controller.ts"
+      },
+      {
+        "file": "backend/src/routes/requestLog.routes.ts",
+        "method": "GET",
+        "endpoint": "/api/projects/:projectId/logs",
+        "framework": "Express",
+        "handler": "getRequestLogsController",
+        "controller_file": "backend/src/controllers/requestLog.controller.ts"
+      },
+      {
+        "file": "backend/src/routes/requestLog.routes.ts",
+        "method": "GET",
+        "endpoint": "/api/logs/:id",
+        "framework": "Express",
+        "handler": "getRequestLogByIdController",
+        "controller_file": "backend/src/controllers/requestLog.controller.ts"
+      },
+      {
+        "file": "backend/src/routes/securityPolicy.routes.ts",
+        "method": "GET",
+        "endpoint": "/api/projects/:projectId/security-policy",
+        "framework": "Express",
+        "handler": "getSecurityPolicyController",
+        "controller_file": "backend/src/controllers/securityPolicy.controller.ts"
+      },
+      {
+        "file": "backend/src/routes/securityPolicy.routes.ts",
+        "method": "PATCH",
+        "endpoint": "/api/projects/:projectId/security-policy",
+        "framework": "Express",
+        "handler": "updateSecurityPolicyController",
+        "controller_file": "backend/src/controllers/securityPolicy.controller.ts"
+      }
+    ],
+    "request_flows": [
+      {
+        "frontend_file": "frontend/src/context/ApiKeysContext.tsx",
+        "backend_file": "backend/src/routes/apiKey.routes.ts",
+        "controller_file": "backend/src/controllers/apiKey.controller.ts",
+        "method": "GET",
+        "endpoint": "/projects/{param}/api-keys",
+        "handler": "getApiKeysController",
+        "matched": true
+      },
+      {
+        "frontend_file": "frontend/src/context/ApiKeysContext.tsx",
+        "backend_file": "backend/src/routes/apiKey.routes.ts",
+        "controller_file": "backend/src/controllers/apiKey.controller.ts",
+        "method": "POST",
+        "endpoint": "/projects/{param}/api-keys",
+        "handler": "createApiKeyController",
+        "matched": true
+      },
+      {
+        "frontend_file": "frontend/src/context/ApiKeysContext.tsx",
+        "backend_file": "backend/src/routes/apiKey.routes.ts",
+        "controller_file": "backend/src/controllers/apiKey.controller.ts",
+        "method": "PATCH",
+        "endpoint": "/api-keys/{param}/revoke",
+        "handler": "revokeApiKeyController",
+        "matched": true
+      },
+      {
+        "frontend_file": "frontend/src/context/AuthContext.tsx",
+        "backend_file": "backend/src/routes/auth.routes.ts",
+        "controller_file": "backend/src/controllers/auth.controller.ts",
+        "method": "GET",
+        "endpoint": "/auth/me",
+        "handler": "getCurrentUserController",
+        "matched": true
+      },
+      {
+        "frontend_file": "frontend/src/context/AuthContext.tsx",
+        "backend_file": "backend/src/routes/auth.routes.ts",
+        "controller_file": "backend/src/controllers/auth.controller.ts",
+        "method": "POST",
+        "endpoint": "/auth/login",
+        "handler": "loginController",
+        "matched": true
+      },
+      {
+        "frontend_file": "frontend/src/context/AuthContext.tsx",
+        "backend_file": "backend/src/routes/auth.routes.ts",
+        "controller_file": "backend/src/controllers/auth.controller.ts",
+        "method": "POST",
+        "endpoint": "/auth/register",
+        "handler": "registerController",
+        "matched": true
+      },
+      {
+        "frontend_file": "frontend/src/context/ProjectsContext.tsx",
+        "backend_file": "backend/src/routes/project.routes.ts",
+        "controller_file": "backend/src/controllers/project.controller.ts",
+        "method": "GET",
+        "endpoint": "/projects",
+        "handler": "getProjectsController",
+        "matched": true
+      },
+      {
+        "frontend_file": "frontend/src/context/ProjectsContext.tsx",
+        "backend_file": "backend/src/routes/project.routes.ts",
+        "controller_file": "backend/src/controllers/project.controller.ts",
+        "method": "POST",
+        "endpoint": "/projects",
+        "handler": "createProjectController",
+        "matched": true
+      },
+      {
+        "frontend_file": "frontend/src/context/RateLimitsContext.tsx",
+        "backend_file": "backend/src/routes/rateLimit.routes.ts",
+        "controller_file": "backend/src/controllers/rateLimit.controller.ts",
+        "method": "GET",
+        "endpoint": "/projects/{param}/rate-limit",
+        "handler": "getRateLimitController",
+        "matched": true
+      },
+      {
+        "frontend_file": "frontend/src/context/RateLimitsContext.tsx",
+        "backend_file": "backend/src/routes/rateLimit.routes.ts",
+        "controller_file": "backend/src/controllers/rateLimit.controller.ts",
+        "method": "PATCH",
+        "endpoint": "/projects/{param}/rate-limit",
+        "handler": "updateRateLimitController",
+        "matched": true
+      },
+      {
+        "frontend_file": "frontend/src/context/SecurityPoliciesContext.tsx",
+        "backend_file": "backend/src/routes/securityPolicy.routes.ts",
+        "controller_file": "backend/src/controllers/securityPolicy.controller.ts",
+        "method": "GET",
+        "endpoint": "/projects/{param}/security-policy",
+        "handler": "getSecurityPolicyController",
+        "matched": true
+      },
+      {
+        "frontend_file": "frontend/src/context/SecurityPoliciesContext.tsx",
+        "backend_file": "backend/src/routes/securityPolicy.routes.ts",
+        "controller_file": "backend/src/controllers/securityPolicy.controller.ts",
+        "method": "PATCH",
+        "endpoint": "/projects/{param}/security-policy",
+        "handler": "updateSecurityPolicyController",
+        "matched": true
+      },
+      {
+        "frontend_file": "frontend/src/services/analytics.service.ts",
+        "backend_file": "backend/src/routes/analytics.routes.ts",
+        "controller_file": "backend/src/controllers/analytics.controller.ts",
+        "method": "GET",
+        "endpoint": "/projects/{param}/analytics/summary",
+        "handler": "getAnalyticsSummaryController",
+        "matched": true
+      },
+      {
+        "frontend_file": "frontend/src/services/analytics.service.ts",
+        "backend_file": "backend/src/routes/analytics.routes.ts",
+        "controller_file": "backend/src/controllers/analytics.controller.ts",
+        "method": "GET",
+        "endpoint": "/projects/{param}/analytics/details",
+        "handler": "getAnalyticsDetailsController",
+        "matched": true
+      },
+      {
+        "frontend_file": "frontend/src/services/gateway.service.ts",
+        "backend_file": "backend/src/routes/gateway.routes.ts",
+        "controller_file": "backend/src/controllers/gateway.controller.ts",
+        "method": "POST",
+        "endpoint": "/gateway/chat",
+        "handler": "gatewayChatController",
+        "matched": true
+      },
+      {
+        "frontend_file": "frontend/src/services/logs.service.ts",
+        "backend_file": "backend/src/routes/requestLog.routes.ts",
+        "controller_file": "backend/src/controllers/requestLog.controller.ts",
+        "method": "GET",
+        "endpoint": "/projects/{param}/logs",
+        "handler": "getRequestLogsController",
+        "matched": true
+      },
+      {
+        "frontend_file": "frontend/src/services/logs.service.ts",
+        "backend_file": "backend/src/routes/requestLog.routes.ts",
+        "controller_file": "backend/src/controllers/requestLog.controller.ts",
+        "method": "GET",
+        "endpoint": "/logs/{param}",
+        "handler": "getRequestLogByIdController",
+        "matched": true
+      }
+    ],
+    "data_connections": [
+      {
+        "file": "backend/prisma/schema.prisma",
+        "technology": "PostgreSQL",
+        "connection_type": "data-layer"
+      },
+      {
+        "file": "backend/src/config/prisma.ts",
+        "technology": "Prisma",
+        "connection_type": "data-layer"
+      },
+      {
+        "file": "backend/src/config/redis.ts",
+        "technology": "Redis",
+        "connection_type": "data-layer"
+      },
+      {
+        "file": "backend/src/middleware/resourceOwnership.ts",
+        "technology": "Prisma",
+        "connection_type": "data-layer"
+      },
+      {
+        "file": "backend/src/services/analytics.service.ts",
+        "technology": "Prisma",
+        "connection_type": "data-layer"
+      },
+      {
+        "file": "backend/src/services/apiKey.service.ts",
+        "technology": "Prisma",
+        "connection_type": "data-layer"
+      },
+      {
+        "file": "backend/src/services/auth.service.ts",
+        "technology": "Prisma",
+        "connection_type": "data-layer"
+      },
+      {
+        "file": "backend/src/services/project.service.ts",
+        "technology": "Prisma",
+        "connection_type": "data-layer"
+      },
+      {
+        "file": "backend/src/services/rateLimit.service.ts",
+        "technology": "Prisma",
+        "connection_type": "data-layer"
+      },
+      {
+        "file": "backend/src/services/rateLimiter.service.ts",
+        "technology": "Redis",
+        "connection_type": "data-layer"
+      },
+      {
+        "file": "backend/src/services/requestLog.service.ts",
+        "technology": "Prisma",
+        "connection_type": "data-layer"
+      },
+      {
+        "file": "backend/src/services/securityPolicy.service.ts",
+        "technology": "Prisma",
+        "connection_type": "data-layer"
+      }
+    ],
+    "end_to_end_flows": [
+      {
+        "frontend_file": "frontend/src/context/ApiKeysContext.tsx",
+        "method": "GET",
+        "endpoint": "/projects/{param}/api-keys",
+        "route_file": "backend/src/routes/apiKey.routes.ts",
+        "controller_file": "backend/src/controllers/apiKey.controller.ts",
+        "handler": "getApiKeysController",
+        "external_services": [],
+        "data_technologies": [
+          "PostgreSQL",
+          "Prisma"
+        ]
+      },
+      {
+        "frontend_file": "frontend/src/context/ApiKeysContext.tsx",
+        "method": "POST",
+        "endpoint": "/projects/{param}/api-keys",
+        "route_file": "backend/src/routes/apiKey.routes.ts",
+        "controller_file": "backend/src/controllers/apiKey.controller.ts",
+        "handler": "createApiKeyController",
+        "external_services": [],
+        "data_technologies": [
+          "PostgreSQL",
+          "Prisma"
+        ]
+      },
+      {
+        "frontend_file": "frontend/src/context/ApiKeysContext.tsx",
+        "method": "PATCH",
+        "endpoint": "/api-keys/{param}/revoke",
+        "route_file": "backend/src/routes/apiKey.routes.ts",
+        "controller_file": "backend/src/controllers/apiKey.controller.ts",
+        "handler": "revokeApiKeyController",
+        "external_services": [],
+        "data_technologies": [
+          "PostgreSQL",
+          "Prisma"
+        ]
+      },
+      {
+        "frontend_file": "frontend/src/context/AuthContext.tsx",
+        "method": "GET",
+        "endpoint": "/auth/me",
+        "route_file": "backend/src/routes/auth.routes.ts",
+        "controller_file": "backend/src/controllers/auth.controller.ts",
+        "handler": "getCurrentUserController",
+        "external_services": [],
+        "data_technologies": [
+          "PostgreSQL",
+          "Prisma"
+        ]
+      },
+      {
+        "frontend_file": "frontend/src/context/AuthContext.tsx",
+        "method": "POST",
+        "endpoint": "/auth/login",
+        "route_file": "backend/src/routes/auth.routes.ts",
+        "controller_file": "backend/src/controllers/auth.controller.ts",
+        "handler": "loginController",
+        "external_services": [],
+        "data_technologies": [
+          "PostgreSQL",
+          "Prisma"
+        ]
+      },
+      {
+        "frontend_file": "frontend/src/context/AuthContext.tsx",
+        "method": "POST",
+        "endpoint": "/auth/register",
+        "route_file": "backend/src/routes/auth.routes.ts",
+        "controller_file": "backend/src/controllers/auth.controller.ts",
+        "handler": "registerController",
+        "external_services": [],
+        "data_technologies": [
+          "PostgreSQL",
+          "Prisma"
+        ]
+      },
+      {
+        "frontend_file": "frontend/src/context/ProjectsContext.tsx",
+        "method": "GET",
+        "endpoint": "/projects",
+        "route_file": "backend/src/routes/project.routes.ts",
+        "controller_file": "backend/src/controllers/project.controller.ts",
+        "handler": "getProjectsController",
+        "external_services": [],
+        "data_technologies": [
+          "PostgreSQL",
+          "Prisma"
+        ]
+      },
+      {
+        "frontend_file": "frontend/src/context/ProjectsContext.tsx",
+        "method": "POST",
+        "endpoint": "/projects",
+        "route_file": "backend/src/routes/project.routes.ts",
+        "controller_file": "backend/src/controllers/project.controller.ts",
+        "handler": "createProjectController",
+        "external_services": [],
+        "data_technologies": [
+          "PostgreSQL",
+          "Prisma"
+        ]
+      },
+      {
+        "frontend_file": "frontend/src/context/RateLimitsContext.tsx",
+        "method": "GET",
+        "endpoint": "/projects/{param}/rate-limit",
+        "route_file": "backend/src/routes/rateLimit.routes.ts",
+        "controller_file": "backend/src/controllers/rateLimit.controller.ts",
+        "handler": "getRateLimitController",
+        "external_services": [],
+        "data_technologies": [
+          "PostgreSQL",
+          "Prisma"
+        ]
+      },
+      {
+        "frontend_file": "frontend/src/context/RateLimitsContext.tsx",
+        "method": "PATCH",
+        "endpoint": "/projects/{param}/rate-limit",
+        "route_file": "backend/src/routes/rateLimit.routes.ts",
+        "controller_file": "backend/src/controllers/rateLimit.controller.ts",
+        "handler": "updateRateLimitController",
+        "external_services": [],
+        "data_technologies": [
+          "PostgreSQL",
+          "Prisma"
+        ]
+      },
+      {
+        "frontend_file": "frontend/src/context/SecurityPoliciesContext.tsx",
+        "method": "GET",
+        "endpoint": "/projects/{param}/security-policy",
+        "route_file": "backend/src/routes/securityPolicy.routes.ts",
+        "controller_file": "backend/src/controllers/securityPolicy.controller.ts",
+        "handler": "getSecurityPolicyController",
+        "external_services": [],
+        "data_technologies": [
+          "PostgreSQL",
+          "Prisma"
+        ]
+      },
+      {
+        "frontend_file": "frontend/src/context/SecurityPoliciesContext.tsx",
+        "method": "PATCH",
+        "endpoint": "/projects/{param}/security-policy",
+        "route_file": "backend/src/routes/securityPolicy.routes.ts",
+        "controller_file": "backend/src/controllers/securityPolicy.controller.ts",
+        "handler": "updateSecurityPolicyController",
+        "external_services": [],
+        "data_technologies": [
+          "PostgreSQL",
+          "Prisma"
+        ]
+      },
+      {
+        "frontend_file": "frontend/src/services/analytics.service.ts",
+        "method": "GET",
+        "endpoint": "/projects/{param}/analytics/summary",
+        "route_file": "backend/src/routes/analytics.routes.ts",
+        "controller_file": "backend/src/controllers/analytics.controller.ts",
+        "handler": "getAnalyticsSummaryController",
+        "external_services": [],
+        "data_technologies": [
+          "PostgreSQL",
+          "Prisma"
+        ]
+      },
+      {
+        "frontend_file": "frontend/src/services/analytics.service.ts",
+        "method": "GET",
+        "endpoint": "/projects/{param}/analytics/details",
+        "route_file": "backend/src/routes/analytics.routes.ts",
+        "controller_file": "backend/src/controllers/analytics.controller.ts",
+        "handler": "getAnalyticsDetailsController",
+        "external_services": [],
+        "data_technologies": [
+          "PostgreSQL",
+          "Prisma"
+        ]
+      },
+      {
+        "frontend_file": "frontend/src/services/gateway.service.ts",
+        "method": "POST",
+        "endpoint": "/gateway/chat",
+        "route_file": "backend/src/routes/gateway.routes.ts",
+        "controller_file": "backend/src/controllers/gateway.controller.ts",
+        "handler": "gatewayChatController",
+        "external_services": [
+          "Groq API"
+        ],
+        "data_technologies": [
+          "PostgreSQL",
+          "Prisma",
+          "Redis"
+        ]
+      },
+      {
+        "frontend_file": "frontend/src/services/logs.service.ts",
+        "method": "GET",
+        "endpoint": "/projects/{param}/logs",
+        "route_file": "backend/src/routes/requestLog.routes.ts",
+        "controller_file": "backend/src/controllers/requestLog.controller.ts",
+        "handler": "getRequestLogsController",
+        "external_services": [],
+        "data_technologies": [
+          "PostgreSQL",
+          "Prisma"
+        ]
+      },
+      {
+        "frontend_file": "frontend/src/services/logs.service.ts",
+        "method": "GET",
+        "endpoint": "/logs/{param}",
+        "route_file": "backend/src/routes/requestLog.routes.ts",
+        "controller_file": "backend/src/controllers/requestLog.controller.ts",
+        "handler": "getRequestLogByIdController",
+        "external_services": [],
+        "data_technologies": [
+          "PostgreSQL",
+          "Prisma"
+        ]
+      }
+    ],
+    "node_count": 134,
+    "edge_count": 199
+  }
+}

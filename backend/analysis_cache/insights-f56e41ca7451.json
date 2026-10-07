@@ -1,0 +1,295 @@
+{
+  "schema_version": 2,
+  "analysis_engine_version": "2.3",
+  "owner": "CSWcdr",
+  "repo_name": "llm-security-gateway",
+  "analysis_type": "insights",
+  "commit_sha": "7efb368586d1ab805a51e049394b7ec7ae300407",
+  "created_at": "2026-10-06T08:41:20.711078+00:00",
+  "data": {
+    "architecture": "Client-Server",
+    "summary": {
+      "source_files": 134,
+      "analyzed_source_files": 134,
+      "file_metric_scope": "analyzed_source_files",
+      "frontend_files": 78,
+      "backend_files": 56,
+      "shared_files": 0,
+      "total_imports": 199,
+      "external_dependencies": 30,
+      "external_api_calls": 1,
+      "data_connections": 12,
+      "data_technology_count": 3,
+      "data_technologies": [
+        "PostgreSQL",
+        "Prisma",
+        "Redis"
+      ],
+      "node_types": {
+        "source": 21,
+        "entry": 5,
+        "configuration": 6,
+        "controller": 10,
+        "middleware": 5,
+        "api": 11,
+        "service": 17,
+        "utility": 7,
+        "component": 33,
+        "hook": 5,
+        "page": 14
+      }
+    },
+    "route_coverage": {
+      "frontend_requests": 17,
+      "backend_routes": 25,
+      "matched_requests": 17,
+      "unmatched_requests": 0,
+      "coverage_percentage": 100.0,
+      "coverage_status": "complete"
+    },
+    "largest_files": [
+      {
+        "path": "backend/src/controllers/apiKey.controller.ts",
+        "language": "TypeScript",
+        "node_type": "controller",
+        "layer": "backend",
+        "lines": 290,
+        "imports": 4,
+        "imported_by": 1
+      },
+      {
+        "path": "backend/src/controllers/auth.controller.ts",
+        "language": "TypeScript",
+        "node_type": "controller",
+        "layer": "backend",
+        "lines": 269,
+        "imports": 3,
+        "imported_by": 1
+      },
+      {
+        "path": "backend/src/controllers/analytics.controller.ts",
+        "language": "TypeScript",
+        "node_type": "controller",
+        "layer": "backend",
+        "lines": 172,
+        "imports": 3,
+        "imported_by": 1
+      },
+      {
+        "path": "backend/src/app.ts",
+        "language": "TypeScript",
+        "node_type": "entry",
+        "layer": "backend",
+        "lines": 134,
+        "imports": 12,
+        "imported_by": 1
+      },
+      {
+        "path": "backend/src/config/env.ts",
+        "language": "TypeScript",
+        "node_type": "configuration",
+        "layer": "backend",
+        "lines": 88,
+        "imports": 0,
+        "imported_by": 6
+      },
+      {
+        "path": "backend/src/config/redis.ts",
+        "language": "TypeScript",
+        "node_type": "configuration",
+        "layer": "backend",
+        "lines": 42,
+        "imports": 1,
+        "imported_by": 2
+      },
+      {
+        "path": "backend/src/controllers/database.controller.ts",
+        "language": "TypeScript",
+        "node_type": "controller",
+        "layer": "backend",
+        "lines": 36,
+        "imports": 1,
+        "imported_by": 1
+      },
+      {
+        "path": "backend/src/config/groq.ts",
+        "language": "TypeScript",
+        "node_type": "configuration",
+        "layer": "backend",
+        "lines": 11,
+        "imports": 1,
+        "imported_by": 1
+      }
+    ],
+    "most_imported_files": [
+      {
+        "path": "frontend/src/types/index.ts",
+        "reason": "Referenced by multiple repository source files.",
+        "value": 18,
+        "metric": "imported_by"
+      },
+      {
+        "path": "backend/src/config/prisma.ts",
+        "reason": "Referenced by multiple repository source files.",
+        "value": 10,
+        "metric": "imported_by"
+      },
+      {
+        "path": "frontend/src/hooks/useProjects.tsx",
+        "reason": "Referenced by multiple repository source files.",
+        "value": 10,
+        "metric": "imported_by"
+      },
+      {
+        "path": "frontend/src/hooks/useAuth.ts",
+        "reason": "Referenced by multiple repository source files.",
+        "value": 8,
+        "metric": "imported_by"
+      },
+      {
+        "path": "frontend/src/lib/api.ts",
+        "reason": "Referenced by multiple repository source files.",
+        "value": 8,
+        "metric": "imported_by"
+      },
+      {
+        "path": "backend/src/middleware/auth.ts",
+        "reason": "Referenced by multiple repository source files.",
+        "value": 7,
+        "metric": "imported_by"
+      },
+      {
+        "path": "backend/src/config/env.ts",
+        "reason": "Referenced by multiple repository source files.",
+        "value": 6,
+        "metric": "imported_by"
+      },
+      {
+        "path": "backend/src/services/project.service.ts",
+        "reason": "Referenced by multiple repository source files.",
+        "value": 6,
+        "metric": "imported_by"
+      }
+    ],
+    "highest_outgoing_imports": [
+      {
+        "path": "frontend/src/routes/AppRoutes.tsx",
+        "reason": "Imports several internal repository modules.",
+        "value": 17,
+        "metric": "imports"
+      },
+      {
+        "path": "backend/src/app.ts",
+        "reason": "Imports several internal repository modules.",
+        "value": 12,
+        "metric": "imports"
+      },
+      {
+        "path": "backend/src/controllers/gateway.controller.ts",
+        "reason": "Imports several internal repository modules.",
+        "value": 8,
+        "metric": "imports"
+      },
+      {
+        "path": "frontend/src/main.tsx",
+        "reason": "Imports several internal repository modules.",
+        "value": 6,
+        "metric": "imports"
+      },
+      {
+        "path": "frontend/src/pages/AnalyticsPage.tsx",
+        "reason": "Imports several internal repository modules.",
+        "value": 6,
+        "metric": "imports"
+      },
+      {
+        "path": "frontend/src/pages/ApiKeysPage.tsx",
+        "reason": "Imports several internal repository modules.",
+        "value": 5,
+        "metric": "imports"
+      },
+      {
+        "path": "backend/src/controllers/apiKey.controller.ts",
+        "reason": "Imports several internal repository modules.",
+        "value": 4,
+        "metric": "imports"
+      },
+      {
+        "path": "backend/src/server.ts",
+        "reason": "Imports several internal repository modules.",
+        "value": 4,
+        "metric": "imports"
+      }
+    ],
+    "findings": [
+      {
+        "category": "maintainability",
+        "title": "Large source files detected",
+        "description": "Some analyzed source files exceed 250 lines. These files may be useful candidates for a maintainability review.",
+        "severity": "medium",
+        "files": [
+          "backend/src/controllers/apiKey.controller.ts",
+          "backend/src/controllers/auth.controller.ts"
+        ]
+      },
+      {
+        "category": "coupling",
+        "title": "High outgoing dependency files",
+        "description": "These files import many internal repository modules and may act as coordination points in the codebase.",
+        "severity": "medium",
+        "files": [
+          "backend/src/app.ts",
+          "backend/src/controllers/gateway.controller.ts",
+          "frontend/src/main.tsx",
+          "frontend/src/pages/AnalyticsPage.tsx",
+          "frontend/src/pages/ApiKeysPage.tsx",
+          "frontend/src/routes/AppRoutes.tsx"
+        ]
+      },
+      {
+        "category": "coupling",
+        "title": "Shared dependency hotspots",
+        "description": "These files are imported by many other repository modules. Changes to them may affect a broader part of the codebase.",
+        "severity": "medium",
+        "files": [
+          "backend/src/config/env.ts",
+          "backend/src/config/prisma.ts",
+          "backend/src/middleware/auth.ts",
+          "backend/src/middleware/resourceOwnership.ts",
+          "backend/src/services/project.service.ts",
+          "frontend/src/data/mockData.ts"
+        ]
+      },
+      {
+        "category": "request-flow",
+        "title": "Frontend requests map to backend routes",
+        "description": "All detected frontend API requests were matched to backend routes.",
+        "severity": "info",
+        "files": []
+      },
+      {
+        "category": "integration",
+        "title": "External service integrations detected",
+        "description": "1 external API call(s) were detected. Services: Groq API.",
+        "severity": "info",
+        "files": [
+          "backend/src/services/llm.service.ts"
+        ]
+      },
+      {
+        "category": "data-layer",
+        "title": "Data technologies detected",
+        "description": "Detected data-layer technologies: PostgreSQL, Prisma, Redis.",
+        "severity": "info",
+        "files": [
+          "backend/prisma/schema.prisma",
+          "backend/src/config/prisma.ts",
+          "backend/src/config/redis.ts",
+          "backend/src/middleware/resourceOwnership.ts",
+          "backend/src/services/analytics.service.ts",
+          "backend/src/services/apiKey.service.ts"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,833 @@
+/* =========================================================
+   CODELENS AI - SHARED DASHBOARD LAYOUT
+   ========================================================= */
+
+   .app-shell {
+    min-height: 100vh;
+  
+    background: #07090d;
+    color: #ffffff;
+  }
+  
+  /* =========================================================
+     TOPBAR
+     ========================================================= */
+  
+  .app-topbar {
+    position: fixed;
+  
+    top: 0;
+    left: 0;
+    right: 0;
+  
+    z-index: 1000;
+  
+    height: 70px;
+  
+    padding: 0 24px;
+  
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  
+    border-bottom: 1px solid #1d2029;
+  
+    background: rgba(8, 10, 15, 0.93);
+  
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+  }
+  
+  .topbar-left,
+  .topbar-right {
+    display: flex;
+    align-items: center;
+  
+    gap: 14px;
+  }
+  
+  .mobile-menu-button {
+    display: none;
+  
+    width: 38px;
+    height: 38px;
+  
+    align-items: center;
+    justify-content: center;
+  
+    border: 1px solid #252934;
+    border-radius: 9px;
+  
+    color: #a6abb7;
+  
+    background: #11141a;
+  
+    cursor: pointer;
+  
+    transition: 0.2s ease;
+  }
+  
+  .mobile-menu-button:hover {
+    color: #ffffff;
+  
+    border-color: #3c414d;
+  
+    background: #151820;
+  }
+  
+  .topbar-back {
+    width: 38px;
+    height: 38px;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    border: 1px solid #252934;
+    border-radius: 9px;
+  
+    background: #11141a;
+  
+    color: #a6abb7;
+  
+    cursor: pointer;
+  
+    transition: 0.2s ease;
+  }
+  
+  .topbar-back:hover {
+    color: #ffffff;
+  
+    border-color: #3a3e4b;
+  
+    background: #151820;
+  }
+  
+  .topbar-brand {
+    min-width: 0;
+  
+    display: flex;
+    align-items: center;
+  
+    gap: 11px;
+  }
+  
+  .topbar-logo {
+    width: 37px;
+    height: 37px;
+  
+    flex-shrink: 0;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    border-radius: 10px;
+  
+    background:
+      linear-gradient(
+        135deg,
+        #795bff,
+        #4d8cff
+      );
+  
+    font-size: 17px;
+    font-weight: 800;
+  
+    box-shadow:
+      0 5px 18px
+      rgba(91, 89, 255, 0.18);
+  }
+  
+  .topbar-brand-text {
+    min-width: 0;
+  }
+  
+  .topbar-brand h3 {
+    margin: 0;
+  
+    color: #f2f3f6;
+  
+    font-size: 15px;
+    font-weight: 650;
+  
+    white-space: nowrap;
+  }
+  
+  .topbar-brand span {
+    display: block;
+  
+    max-width: 230px;
+  
+    margin-top: 2px;
+  
+    overflow: hidden;
+  
+    color: #686d7a;
+  
+    font-size: 11px;
+  
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  
+  /* =========================================================
+     STATUS
+     ========================================================= */
+  
+  .analysis-status {
+    padding: 7px 11px;
+  
+    display: flex;
+    align-items: center;
+  
+    gap: 7px;
+  
+    border-radius: 50px;
+  
+    font-size: 10px;
+  }
+  
+  .analysis-status.analysis-pending {
+    border:
+      1px solid
+      rgba(255, 184, 93, 0.2);
+  
+    background:
+      rgba(255, 184, 93, 0.05);
+  
+    color: #e3ad65;
+  }
+  
+  .status-indicator {
+    width: 7px;
+    height: 7px;
+  
+    flex-shrink: 0;
+  
+    border-radius: 50%;
+  }
+  
+  .status-indicator.pending {
+    background: #e7ad61;
+  
+    box-shadow:
+      0 0 9px
+      rgba(231, 173, 97, 0.4);
+  }
+  
+  /* =========================================================
+     REPOSITORY LINK
+     ========================================================= */
+  
+  .github-repo-link {
+    padding: 9px 13px;
+  
+    display: flex;
+    align-items: center;
+  
+    gap: 7px;
+  
+    border: 1px solid #2a2e38;
+    border-radius: 8px;
+  
+    text-decoration: none;
+  
+    color: #d9dce4;
+  
+    background: #11141a;
+  
+    font-size: 11px;
+  
+    transition: 0.2s ease;
+  }
+  
+  .github-repo-link:hover {
+    color: #ffffff;
+  
+    border-color: #484d5b;
+  
+    background: #151820;
+  
+    transform: translateY(-1px);
+  }
+  
+  /* =========================================================
+     BODY
+     ========================================================= */
+  
+  .app-body {
+    min-height: 100vh;
+  
+    padding-top: 70px;
+  
+    display: flex;
+  }
+  
+  /* =========================================================
+     SIDEBAR
+     ========================================================= */
+  
+  .app-sidebar {
+    position: fixed;
+  
+    top: 70px;
+    left: 0;
+    bottom: 0;
+  
+    z-index: 900;
+  
+    width: 240px;
+  
+    padding: 24px 15px;
+  
+    display: flex;
+    flex-direction: column;
+  
+    border-right: 1px solid #1d2029;
+  
+    background: #0a0c11;
+  
+    transition:
+      transform 0.25s ease;
+  }
+  
+  .sidebar-mobile-header {
+    display: none;
+  }
+  
+  .sidebar-label {
+    margin-bottom: 9px;
+  
+    color: #555b68;
+  
+    font-size: 9px;
+    font-weight: 700;
+  
+    letter-spacing: 1.4px;
+  }
+  
+  .sidebar-repo-name {
+    min-width: 0;
+  
+    padding: 11px 12px;
+  
+    display: flex;
+    align-items: center;
+  
+    gap: 9px;
+  
+    border: 1px solid #222630;
+    border-radius: 9px;
+  
+    background: #101319;
+  
+    color: #c9ccd4;
+  
+    font-size: 13px;
+  }
+  
+  .sidebar-repo-name svg {
+    flex-shrink: 0;
+  
+    color: #8d7bff;
+  }
+  
+  .sidebar-repo-name span {
+    min-width: 0;
+  
+    overflow: hidden;
+  
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  
+  /* =========================================================
+     SIDEBAR NAV
+     ========================================================= */
+  
+  .sidebar-navigation {
+    margin-top: 28px;
+  
+    display: flex;
+    flex-direction: column;
+  
+    gap: 5px;
+  }
+  
+  .sidebar-link {
+    min-height: 42px;
+  
+    padding: 10px 12px;
+  
+    display: flex;
+    align-items: center;
+  
+    gap: 11px;
+  
+    border: 1px solid transparent;
+    border-radius: 8px;
+  
+    color: #737986;
+  
+    text-decoration: none;
+  
+    font-size: 13px;
+  
+    transition:
+      color 0.2s ease,
+      background 0.2s ease,
+      border 0.2s ease,
+      transform 0.2s ease;
+  }
+  
+  .sidebar-link svg {
+    flex-shrink: 0;
+  }
+  
+  .sidebar-link:hover {
+    color: #d5d8df;
+  
+    background: #11141a;
+  
+    transform: translateX(2px);
+  }
+  
+  .sidebar-link-active {
+    color: #ffffff;
+  
+    border-color:
+      rgba(118, 88, 255, 0.18);
+  
+    background:
+      linear-gradient(
+        90deg,
+        rgba(118, 88, 255, 0.18),
+        rgba(80, 139, 255, 0.05)
+      );
+  
+    box-shadow:
+      inset 3px 0 0 #7557ff;
+  }
+  
+  .sidebar-link-active svg {
+    color: #9b8aff;
+  }
+  
+  /* =========================================================
+     SIDEBAR BOTTOM
+     ========================================================= */
+  
+  .sidebar-bottom {
+    margin-top: auto;
+  }
+  
+  .sidebar-settings-button {
+    width: 100%;
+  
+    padding: 10px 12px;
+  
+    display: flex;
+    align-items: center;
+  
+    gap: 10px;
+  
+    border: none;
+    border-radius: 8px;
+  
+    color: #6f7581;
+  
+    background: transparent;
+  
+    cursor: pointer;
+  
+    font-size: 13px;
+  
+    transition: 0.2s ease;
+  }
+  
+  .sidebar-settings-button:hover {
+    color: #ffffff;
+  
+    background: #11141a;
+  }
+  
+  .sidebar-version {
+    margin-top: 16px;
+    padding-top: 15px;
+  
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  
+    border-top: 1px solid #1d2029;
+  
+    color: #464b57;
+  
+    font-size: 10px;
+  }
+  
+  .sidebar-version small {
+    font-size: 10px;
+  }
+  
+  /* =========================================================
+     MAIN CONTENT
+     ========================================================= */
+  
+  .app-content-wrapper {
+    width:
+      calc(
+        100% - 240px
+      );
+  
+    min-height:
+      calc(
+        100vh - 70px
+      );
+  
+    margin-left: 240px;
+  
+    display: flex;
+    flex-direction: column;
+  
+    transition:
+      margin 0.25s ease,
+      width 0.25s ease;
+  }
+  
+  .app-content {
+    flex: 1;
+  
+    width: 100%;
+  
+    padding: 32px;
+  
+    background:
+      radial-gradient(
+        circle at 65% 0%,
+        rgba(115, 82, 255, 0.06),
+        transparent 30%
+      ),
+      #07090d;
+  }
+  
+  /* =========================================================
+     FOOTER
+     ========================================================= */
+  
+  .app-footer {
+    min-height: 58px;
+  
+    padding: 0 30px;
+  
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  
+    gap: 20px;
+  
+    border-top: 1px solid #1d2029;
+  
+    color: #555b67;
+  
+    background: #090b10;
+  
+    font-size: 11px;
+  }
+  
+  .footer-version {
+    color: #414650;
+  }
+  
+  /* =========================================================
+     BACKDROP
+     ========================================================= */
+  
+  .sidebar-backdrop {
+    display: none;
+  }
+  
+  /* =========================================================
+     TABLET
+     ========================================================= */
+  
+  @media (max-width: 1100px) {
+    .app-sidebar {
+      width: 210px;
+    }
+  
+    .app-content-wrapper {
+      width:
+        calc(
+          100% - 210px
+        );
+  
+      margin-left: 210px;
+    }
+  
+    .app-content {
+      padding: 26px;
+    }
+  
+    .topbar-brand span {
+      max-width: 170px;
+    }
+  }
+  
+  /* =========================================================
+     MOBILE / SMALL TABLET
+     ========================================================= */
+  
+  @media (max-width: 800px) {
+    .app-topbar {
+      height: 64px;
+  
+      padding: 0 14px;
+    }
+  
+    .app-body {
+      padding-top: 64px;
+    }
+  
+    .mobile-menu-button {
+      display: flex;
+    }
+  
+    .topbar-back {
+      display: none;
+    }
+  
+    .topbar-logo {
+      width: 34px;
+      height: 34px;
+  
+      font-size: 15px;
+    }
+  
+    .topbar-brand h3 {
+      font-size: 14px;
+    }
+  
+    .topbar-brand span {
+      max-width: 150px;
+  
+      font-size: 10px;
+    }
+  
+    .analysis-status {
+      display: none;
+    }
+  
+    .github-repo-link span {
+      display: none;
+    }
+  
+    .github-repo-link {
+      width: 38px;
+      height: 38px;
+  
+      padding: 0;
+  
+      justify-content: center;
+    }
+  
+    /* ---------------------
+       DRAWER SIDEBAR
+       --------------------- */
+  
+    .app-sidebar {
+      top: 0;
+  
+      width: min(
+        82vw,
+        290px
+      );
+  
+      padding: 0 16px 20px;
+  
+      z-index: 1200;
+  
+      transform:
+        translateX(-105%);
+  
+      box-shadow:
+        20px 0 60px
+        rgba(0, 0, 0, 0.4);
+    }
+  
+    .app-sidebar.sidebar-open {
+      transform:
+        translateX(0);
+    }
+  
+    .sidebar-mobile-header {
+      min-height: 65px;
+  
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+  
+      border-bottom:
+        1px solid #1d2029;
+    }
+  
+    .sidebar-mobile-header > div {
+      display: flex;
+      align-items: center;
+  
+      gap: 9px;
+    }
+  
+    .sidebar-mobile-logo {
+      width: 31px;
+      height: 31px;
+  
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  
+      border-radius: 8px;
+  
+      background:
+        linear-gradient(
+          135deg,
+          #795bff,
+          #4d8cff
+        );
+  
+      color: white;
+  
+      font-size: 14px;
+      font-weight: 800;
+    }
+  
+    .sidebar-mobile-header strong {
+      font-size: 14px;
+    }
+  
+    .sidebar-mobile-header button {
+      width: 35px;
+      height: 35px;
+  
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  
+      border: 1px solid #262a34;
+      border-radius: 8px;
+  
+      color: #858b98;
+  
+      background: #11141a;
+  
+      cursor: pointer;
+    }
+  
+    .sidebar-repository {
+      margin-top: 22px;
+    }
+  
+    .sidebar-navigation {
+      margin-top: 25px;
+    }
+  
+    .sidebar-backdrop {
+      position: fixed;
+  
+      inset: 0;
+  
+      z-index: 1100;
+  
+      display: block;
+  
+      border: none;
+  
+      background:
+        rgba(0, 0, 0, 0.62);
+  
+      backdrop-filter:
+        blur(3px);
+  
+      -webkit-backdrop-filter:
+        blur(3px);
+  
+      cursor: default;
+    }
+  
+    .app-content-wrapper {
+      width: 100%;
+  
+      margin-left: 0;
+    }
+  
+    .app-content {
+      padding:
+        24px 18px;
+    }
+  }
+  
+  /* =========================================================
+     PHONE
+     ========================================================= */
+  
+  @media (max-width: 520px) {
+    .app-topbar {
+      padding: 0 11px;
+    }
+  
+    .topbar-left {
+      gap: 9px;
+    }
+  
+    .mobile-menu-button {
+      width: 36px;
+      height: 36px;
+    }
+  
+    .topbar-brand {
+      gap: 8px;
+    }
+  
+    .topbar-logo {
+      width: 32px;
+      height: 32px;
+  
+      border-radius: 8px;
+    }
+  
+    .topbar-brand h3 {
+      font-size: 13px;
+    }
+  
+    .topbar-brand span {
+      max-width: 115px;
+  
+      font-size: 9px;
+    }
+  
+    .github-repo-link {
+      width: 36px;
+      height: 36px;
+    }
+  
+    .app-content {
+      padding:
+        20px 13px;
+    }
+  
+    .app-footer {
+      min-height: 68px;
+  
+      padding:
+        13px 16px;
+  
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+  
+      gap: 3px;
+  
+      font-size: 9px;
+    }
+  }

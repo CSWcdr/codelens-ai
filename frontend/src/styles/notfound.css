@@ -1,0 +1,218 @@
+.notfound-page {
+    position: relative;
+  
+    min-height: 100vh;
+  
+    padding: 30px;
+  
+    overflow: hidden;
+  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  
+    color: #ffffff;
+  
+    background: #07090d;
+  }
+  
+  .notfound-glow {
+    position: absolute;
+  
+    width: 520px;
+    height: 350px;
+  
+    border-radius: 50%;
+  
+    background:
+      rgba(117, 87, 255, 0.12);
+  
+    filter: blur(110px);
+  
+    pointer-events: none;
+  }
+  
+  .notfound-card {
+    position: relative;
+  
+    z-index: 2;
+  
+    width: 100%;
+    max-width: 560px;
+  
+    padding: 54px 40px;
+  
+    text-align: center;
+  
+    border: 1px solid #232833;
+    border-radius: 18px;
+  
+    background:
+      radial-gradient(
+        circle at 50% 0%,
+        rgba(117, 87, 255, 0.08),
+        transparent 45%
+      ),
+      #0d1016;
+  
+    box-shadow:
+      0 30px 90px
+      rgba(0, 0, 0, 0.4);
+  }
+  
+  .notfound-icon {
+    width: 58px;
+    height: 58px;
+  
+    margin: 0 auto;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    border-radius: 14px;
+  
+    color: #9b89ff;
+  
+    background:
+      rgba(117, 87, 255, 0.11);
+  
+    border:
+      1px solid
+      rgba(117, 87, 255, 0.18);
+  }
+  
+  .notfound-code {
+    margin-top: 24px;
+  
+    color: #8171df;
+  
+    font-size: 11px;
+    font-weight: 700;
+  
+    letter-spacing: 3px;
+  }
+  
+  .notfound-card h1 {
+    margin-top: 10px;
+  
+    font-size:
+      clamp(
+        34px,
+        5vw,
+        48px
+      );
+  
+    letter-spacing: -2px;
+  }
+  
+  .notfound-description {
+    max-width: 410px;
+  
+    margin:
+      14px auto 0;
+  
+    color: #7b828f;
+  
+    font-size: 12px;
+    line-height: 1.7;
+  }
+  
+  .notfound-actions {
+    margin-top: 30px;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    gap: 10px;
+  }
+  
+  .notfound-actions button {
+    min-height: 42px;
+  
+    padding: 0 15px;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    gap: 7px;
+  
+    border-radius: 8px;
+  
+    cursor: pointer;
+  
+    font-size: 10px;
+  
+    transition: 0.2s ease;
+  }
+  
+  .notfound-primary {
+    border: none;
+  
+    color: #ffffff;
+  
+    background:
+      linear-gradient(
+        135deg,
+        #7658ff,
+        #4e8cff
+      );
+  }
+  
+  .notfound-primary:hover {
+    transform: translateY(-2px);
+  
+    box-shadow:
+      0 8px 24px
+      rgba(100, 83, 255, 0.22);
+  }
+  
+  .notfound-secondary {
+    border: 1px solid #2b303b;
+  
+    color: #a3a8b2;
+  
+    background: #11151b;
+  }
+  
+  .notfound-secondary:hover {
+    color: #ffffff;
+  
+    border-color: #444a56;
+  
+    background: #161a21;
+  }
+  
+  .notfound-footer {
+    position: relative;
+  
+    z-index: 2;
+  
+    margin-top: 22px;
+  
+    color: #464c57;
+  
+    font-size: 9px;
+  }
+  
+  @media (max-width: 520px) {
+    .notfound-page {
+      padding: 16px;
+    }
+  
+    .notfound-card {
+      padding:
+        42px 22px;
+    }
+  
+    .notfound-actions {
+      flex-direction: column;
+    }
+  
+    .notfound-actions button {
+      width: 100%;
+    }
+  }

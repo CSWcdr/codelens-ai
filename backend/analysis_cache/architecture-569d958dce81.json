@@ -1,0 +1,1075 @@
+{
+  "schema_version": 2,
+  "analysis_engine_version": "2.2",
+  "owner": "CSWcdr",
+  "repo_name": "Quick-AI",
+  "analysis_type": "architecture",
+  "commit_sha": "a8a1375dfb6e7f95bf5eaf9a6f5af9575ea10fbd",
+  "created_at": "2026-10-06T10:49:08.855447+00:00",
+  "data": {
+    "architecture": "Client-Server",
+    "nodes": [
+      {
+        "id": "client/eslint.config.js",
+        "label": "eslint.config.js",
+        "path": "client/eslint.config.js",
+        "node_type": "configuration",
+        "language": "JavaScript",
+        "layer": "frontend"
+      },
+      {
+        "id": "client/src/App.jsx",
+        "label": "App.jsx",
+        "path": "client/src/App.jsx",
+        "node_type": "entry",
+        "language": "JavaScript",
+        "layer": "frontend"
+      },
+      {
+        "id": "client/src/assets/assets.js",
+        "label": "assets.js",
+        "path": "client/src/assets/assets.js",
+        "node_type": "source",
+        "language": "JavaScript",
+        "layer": "frontend"
+      },
+      {
+        "id": "client/src/components/AiTools.jsx",
+        "label": "AiTools.jsx",
+        "path": "client/src/components/AiTools.jsx",
+        "node_type": "component",
+        "language": "JavaScript",
+        "layer": "frontend"
+      },
+      {
+        "id": "client/src/components/CreationItem.jsx",
+        "label": "CreationItem.jsx",
+        "path": "client/src/components/CreationItem.jsx",
+        "node_type": "component",
+        "language": "JavaScript",
+        "layer": "frontend"
+      },
+      {
+        "id": "client/src/components/Footer.jsx",
+        "label": "Footer.jsx",
+        "path": "client/src/components/Footer.jsx",
+        "node_type": "component",
+        "language": "JavaScript",
+        "layer": "frontend"
+      },
+      {
+        "id": "client/src/components/Hero.jsx",
+        "label": "Hero.jsx",
+        "path": "client/src/components/Hero.jsx",
+        "node_type": "component",
+        "language": "JavaScript",
+        "layer": "frontend"
+      },
+      {
+        "id": "client/src/components/Navbar.jsx",
+        "label": "Navbar.jsx",
+        "path": "client/src/components/Navbar.jsx",
+        "node_type": "component",
+        "language": "JavaScript",
+        "layer": "frontend"
+      },
+      {
+        "id": "client/src/components/Plan.jsx",
+        "label": "Plan.jsx",
+        "path": "client/src/components/Plan.jsx",
+        "node_type": "component",
+        "language": "JavaScript",
+        "layer": "frontend"
+      },
+      {
+        "id": "client/src/components/Protect.jsx",
+        "label": "Protect.jsx",
+        "path": "client/src/components/Protect.jsx",
+        "node_type": "component",
+        "language": "JavaScript",
+        "layer": "frontend"
+      },
+      {
+        "id": "client/src/components/Sidebar.jsx",
+        "label": "Sidebar.jsx",
+        "path": "client/src/components/Sidebar.jsx",
+        "node_type": "component",
+        "language": "JavaScript",
+        "layer": "frontend"
+      },
+      {
+        "id": "client/src/components/Testimonial.jsx",
+        "label": "Testimonial.jsx",
+        "path": "client/src/components/Testimonial.jsx",
+        "node_type": "component",
+        "language": "JavaScript",
+        "layer": "frontend"
+      },
+      {
+        "id": "client/src/main.jsx",
+        "label": "main.jsx",
+        "path": "client/src/main.jsx",
+        "node_type": "entry",
+        "language": "JavaScript",
+        "layer": "frontend"
+      },
+      {
+        "id": "client/src/pages/BlogTitles.jsx",
+        "label": "BlogTitles.jsx",
+        "path": "client/src/pages/BlogTitles.jsx",
+        "node_type": "page",
+        "language": "JavaScript",
+        "layer": "frontend"
+      },
+      {
+        "id": "client/src/pages/Community.jsx",
+        "label": "Community.jsx",
+        "path": "client/src/pages/Community.jsx",
+        "node_type": "page",
+        "language": "JavaScript",
+        "layer": "frontend"
+      },
+      {
+        "id": "client/src/pages/Dashboard.jsx",
+        "label": "Dashboard.jsx",
+        "path": "client/src/pages/Dashboard.jsx",
+        "node_type": "page",
+        "language": "JavaScript",
+        "layer": "frontend"
+      },
+      {
+        "id": "client/src/pages/GenerateImages.jsx",
+        "label": "GenerateImages.jsx",
+        "path": "client/src/pages/GenerateImages.jsx",
+        "node_type": "page",
+        "language": "JavaScript",
+        "layer": "frontend"
+      },
+      {
+        "id": "client/src/pages/Home.jsx",
+        "label": "Home.jsx",
+        "path": "client/src/pages/Home.jsx",
+        "node_type": "page",
+        "language": "JavaScript",
+        "layer": "frontend"
+      },
+      {
+        "id": "client/src/pages/Layout.jsx",
+        "label": "Layout.jsx",
+        "path": "client/src/pages/Layout.jsx",
+        "node_type": "page",
+        "language": "JavaScript",
+        "layer": "frontend"
+      },
+      {
+        "id": "client/src/pages/RemoveBackground.jsx",
+        "label": "RemoveBackground.jsx",
+        "path": "client/src/pages/RemoveBackground.jsx",
+        "node_type": "page",
+        "language": "JavaScript",
+        "layer": "frontend"
+      },
+      {
+        "id": "client/src/pages/RemoveObject.jsx",
+        "label": "RemoveObject.jsx",
+        "path": "client/src/pages/RemoveObject.jsx",
+        "node_type": "page",
+        "language": "JavaScript",
+        "layer": "frontend"
+      },
+      {
+        "id": "client/src/pages/ReviewResume.jsx",
+        "label": "ReviewResume.jsx",
+        "path": "client/src/pages/ReviewResume.jsx",
+        "node_type": "page",
+        "language": "JavaScript",
+        "layer": "frontend"
+      },
+      {
+        "id": "client/src/pages/WriteArticle.jsx",
+        "label": "WriteArticle.jsx",
+        "path": "client/src/pages/WriteArticle.jsx",
+        "node_type": "page",
+        "language": "JavaScript",
+        "layer": "frontend"
+      },
+      {
+        "id": "client/vite.config.js",
+        "label": "vite.config.js",
+        "path": "client/vite.config.js",
+        "node_type": "configuration",
+        "language": "JavaScript",
+        "layer": "frontend"
+      },
+      {
+        "id": "server/configs/cloudinary.js",
+        "label": "cloudinary.js",
+        "path": "server/configs/cloudinary.js",
+        "node_type": "configuration",
+        "language": "JavaScript",
+        "layer": "backend"
+      },
+      {
+        "id": "server/configs/db.js",
+        "label": "db.js",
+        "path": "server/configs/db.js",
+        "node_type": "configuration",
+        "language": "JavaScript",
+        "layer": "backend"
+      },
+      {
+        "id": "server/configs/multer.js",
+        "label": "multer.js",
+        "path": "server/configs/multer.js",
+        "node_type": "configuration",
+        "language": "JavaScript",
+        "layer": "backend"
+      },
+      {
+        "id": "server/controllers/aiController.js",
+        "label": "aiController.js",
+        "path": "server/controllers/aiController.js",
+        "node_type": "controller",
+        "language": "JavaScript",
+        "layer": "backend"
+      },
+      {
+        "id": "server/controllers/userController.js",
+        "label": "userController.js",
+        "path": "server/controllers/userController.js",
+        "node_type": "controller",
+        "language": "JavaScript",
+        "layer": "backend"
+      },
+      {
+        "id": "server/middlewares/auth.js",
+        "label": "auth.js",
+        "path": "server/middlewares/auth.js",
+        "node_type": "middleware",
+        "language": "JavaScript",
+        "layer": "backend"
+      },
+      {
+        "id": "server/routes/aiRoutes.js",
+        "label": "aiRoutes.js",
+        "path": "server/routes/aiRoutes.js",
+        "node_type": "api",
+        "language": "JavaScript",
+        "layer": "backend"
+      },
+      {
+        "id": "server/routes/userRoutes.js",
+        "label": "userRoutes.js",
+        "path": "server/routes/userRoutes.js",
+        "node_type": "api",
+        "language": "JavaScript",
+        "layer": "backend"
+      },
+      {
+        "id": "server/server.js",
+        "label": "server.js",
+        "path": "server/server.js",
+        "node_type": "entry",
+        "language": "JavaScript",
+        "layer": "backend"
+      },
+      {
+        "id": "server/testGemini.js",
+        "label": "testGemini.js",
+        "path": "server/testGemini.js",
+        "node_type": "source",
+        "language": "JavaScript",
+        "layer": "backend"
+      }
+    ],
+    "edges": [
+      {
+        "source": "client/src/App.jsx",
+        "target": "client/src/pages/BlogTitles.jsx",
+        "relationship": "imports"
+      },
+      {
+        "source": "client/src/App.jsx",
+        "target": "client/src/pages/Community.jsx",
+        "relationship": "imports"
+      },
+      {
+        "source": "client/src/App.jsx",
+        "target": "client/src/pages/Dashboard.jsx",
+        "relationship": "imports"
+      },
+      {
+        "source": "client/src/App.jsx",
+        "target": "client/src/pages/GenerateImages.jsx",
+        "relationship": "imports"
+      },
+      {
+        "source": "client/src/App.jsx",
+        "target": "client/src/pages/Home.jsx",
+        "relationship": "imports"
+      },
+      {
+        "source": "client/src/App.jsx",
+        "target": "client/src/pages/Layout.jsx",
+        "relationship": "imports"
+      },
+      {
+        "source": "client/src/App.jsx",
+        "target": "client/src/pages/RemoveBackground.jsx",
+        "relationship": "imports"
+      },
+      {
+        "source": "client/src/App.jsx",
+        "target": "client/src/pages/RemoveObject.jsx",
+        "relationship": "imports"
+      },
+      {
+        "source": "client/src/App.jsx",
+        "target": "client/src/pages/ReviewResume.jsx",
+        "relationship": "imports"
+      },
+      {
+        "source": "client/src/App.jsx",
+        "target": "client/src/pages/WriteArticle.jsx",
+        "relationship": "imports"
+      },
+      {
+        "source": "client/src/components/AiTools.jsx",
+        "target": "client/src/assets/assets.js",
+        "relationship": "imports"
+      },
+      {
+        "source": "client/src/components/Footer.jsx",
+        "target": "client/src/assets/assets.js",
+        "relationship": "imports"
+      },
+      {
+        "source": "client/src/components/Hero.jsx",
+        "target": "client/src/assets/assets.js",
+        "relationship": "imports"
+      },
+      {
+        "source": "client/src/components/Navbar.jsx",
+        "target": "client/src/assets/assets.js",
+        "relationship": "imports"
+      },
+      {
+        "source": "client/src/components/Testimonial.jsx",
+        "target": "client/src/assets/assets.js",
+        "relationship": "imports"
+      },
+      {
+        "source": "client/src/main.jsx",
+        "target": "client/src/App.jsx",
+        "relationship": "imports"
+      },
+      {
+        "source": "client/src/pages/Community.jsx",
+        "target": "client/src/assets/assets.js",
+        "relationship": "imports"
+      },
+      {
+        "source": "client/src/pages/Dashboard.jsx",
+        "target": "client/src/assets/assets.js",
+        "relationship": "imports"
+      },
+      {
+        "source": "client/src/pages/Dashboard.jsx",
+        "target": "client/src/components/CreationItem.jsx",
+        "relationship": "imports"
+      },
+      {
+        "source": "client/src/pages/Dashboard.jsx",
+        "target": "client/src/components/Protect.jsx",
+        "relationship": "imports"
+      },
+      {
+        "source": "client/src/pages/Home.jsx",
+        "target": "client/src/components/AiTools.jsx",
+        "relationship": "imports"
+      },
+      {
+        "source": "client/src/pages/Home.jsx",
+        "target": "client/src/components/Footer.jsx",
+        "relationship": "imports"
+      },
+      {
+        "source": "client/src/pages/Home.jsx",
+        "target": "client/src/components/Hero.jsx",
+        "relationship": "imports"
+      },
+      {
+        "source": "client/src/pages/Home.jsx",
+        "target": "client/src/components/Navbar.jsx",
+        "relationship": "imports"
+      },
+      {
+        "source": "client/src/pages/Home.jsx",
+        "target": "client/src/components/Plan.jsx",
+        "relationship": "imports"
+      },
+      {
+        "source": "client/src/pages/Home.jsx",
+        "target": "client/src/components/Testimonial.jsx",
+        "relationship": "imports"
+      },
+      {
+        "source": "client/src/pages/Layout.jsx",
+        "target": "client/src/assets/assets.js",
+        "relationship": "imports"
+      },
+      {
+        "source": "client/src/pages/Layout.jsx",
+        "target": "client/src/components/Sidebar.jsx",
+        "relationship": "imports"
+      },
+      {
+        "source": "server/controllers/aiController.js",
+        "target": "server/configs/db.js",
+        "relationship": "imports"
+      },
+      {
+        "source": "server/controllers/userController.js",
+        "target": "server/configs/db.js",
+        "relationship": "imports"
+      },
+      {
+        "source": "server/routes/aiRoutes.js",
+        "target": "server/configs/multer.js",
+        "relationship": "imports"
+      },
+      {
+        "source": "server/routes/aiRoutes.js",
+        "target": "server/controllers/aiController.js",
+        "relationship": "imports"
+      },
+      {
+        "source": "server/routes/aiRoutes.js",
+        "target": "server/middlewares/auth.js",
+        "relationship": "imports"
+      },
+      {
+        "source": "server/routes/userRoutes.js",
+        "target": "server/controllers/userController.js",
+        "relationship": "imports"
+      },
+      {
+        "source": "server/routes/userRoutes.js",
+        "target": "server/middlewares/auth.js",
+        "relationship": "imports"
+      },
+      {
+        "source": "server/server.js",
+        "target": "server/configs/cloudinary.js",
+        "relationship": "imports"
+      },
+      {
+        "source": "server/server.js",
+        "target": "server/routes/aiRoutes.js",
+        "relationship": "imports"
+      },
+      {
+        "source": "server/server.js",
+        "target": "server/routes/userRoutes.js",
+        "relationship": "imports"
+      }
+    ],
+    "external_dependencies": [
+      {
+        "name": "@clerk/express",
+        "used_by": [
+          "server/controllers/aiController.js",
+          "server/middlewares/auth.js",
+          "server/server.js"
+        ]
+      },
+      {
+        "name": "@clerk/react",
+        "used_by": [
+          "client/src/App.jsx",
+          "client/src/components/AiTools.jsx",
+          "client/src/components/Navbar.jsx",
+          "client/src/components/Plan.jsx",
+          "client/src/components/Protect.jsx",
+          "client/src/components/Sidebar.jsx",
+          "client/src/main.jsx",
+          "client/src/pages/BlogTitles.jsx",
+          "client/src/pages/Community.jsx",
+          "client/src/pages/Dashboard.jsx",
+          "client/src/pages/GenerateImages.jsx",
+          "client/src/pages/Layout.jsx",
+          "client/src/pages/RemoveBackground.jsx",
+          "client/src/pages/RemoveObject.jsx",
+          "client/src/pages/ReviewResume.jsx",
+          "client/src/pages/WriteArticle.jsx"
+        ]
+      },
+      {
+        "name": "@eslint/js",
+        "used_by": [
+          "client/eslint.config.js"
+        ]
+      },
+      {
+        "name": "@neondatabase/serverless",
+        "used_by": [
+          "server/configs/db.js"
+        ]
+      },
+      {
+        "name": "@tailwindcss/vite",
+        "used_by": [
+          "client/vite.config.js"
+        ]
+      },
+      {
+        "name": "@vitejs/plugin-react",
+        "used_by": [
+          "client/vite.config.js"
+        ]
+      },
+      {
+        "name": "axios",
+        "used_by": [
+          "client/src/pages/BlogTitles.jsx",
+          "client/src/pages/Community.jsx",
+          "client/src/pages/Dashboard.jsx",
+          "client/src/pages/GenerateImages.jsx",
+          "client/src/pages/RemoveBackground.jsx",
+          "client/src/pages/RemoveObject.jsx",
+          "client/src/pages/ReviewResume.jsx",
+          "client/src/pages/WriteArticle.jsx",
+          "server/controllers/aiController.js"
+        ]
+      },
+      {
+        "name": "cloudinary",
+        "used_by": [
+          "server/configs/cloudinary.js",
+          "server/controllers/aiController.js"
+        ]
+      },
+      {
+        "name": "cors",
+        "used_by": [
+          "server/server.js"
+        ]
+      },
+      {
+        "name": "dotenv",
+        "used_by": [
+          "server/server.js",
+          "server/testGemini.js"
+        ]
+      },
+      {
+        "name": "eslint",
+        "used_by": [
+          "client/eslint.config.js"
+        ]
+      },
+      {
+        "name": "eslint-plugin-react-hooks",
+        "used_by": [
+          "client/eslint.config.js"
+        ]
+      },
+      {
+        "name": "eslint-plugin-react-refresh",
+        "used_by": [
+          "client/eslint.config.js"
+        ]
+      },
+      {
+        "name": "express",
+        "used_by": [
+          "server/routes/aiRoutes.js",
+          "server/routes/userRoutes.js",
+          "server/server.js"
+        ]
+      },
+      {
+        "name": "form-data",
+        "used_by": [
+          "server/controllers/aiController.js"
+        ]
+      },
+      {
+        "name": "fs",
+        "used_by": [
+          "server/controllers/aiController.js"
+        ]
+      },
+      {
+        "name": "globals",
+        "used_by": [
+          "client/eslint.config.js"
+        ]
+      },
+      {
+        "name": "lucide-react",
+        "used_by": [
+          "client/src/assets/assets.js",
+          "client/src/components/Navbar.jsx",
+          "client/src/components/Sidebar.jsx",
+          "client/src/pages/BlogTitles.jsx",
+          "client/src/pages/Community.jsx",
+          "client/src/pages/Dashboard.jsx",
+          "client/src/pages/GenerateImages.jsx",
+          "client/src/pages/Layout.jsx",
+          "client/src/pages/RemoveBackground.jsx",
+          "client/src/pages/RemoveObject.jsx",
+          "client/src/pages/ReviewResume.jsx",
+          "client/src/pages/WriteArticle.jsx"
+        ]
+      },
+      {
+        "name": "multer",
+        "used_by": [
+          "server/configs/multer.js"
+        ]
+      },
+      {
+        "name": "pdf-parse",
+        "used_by": [
+          "server/controllers/aiController.js"
+        ]
+      },
+      {
+        "name": "react",
+        "used_by": [
+          "client/src/App.jsx",
+          "client/src/components/AiTools.jsx",
+          "client/src/components/CreationItem.jsx",
+          "client/src/components/Footer.jsx",
+          "client/src/components/Hero.jsx",
+          "client/src/components/Navbar.jsx",
+          "client/src/components/Plan.jsx",
+          "client/src/components/Sidebar.jsx",
+          "client/src/pages/BlogTitles.jsx",
+          "client/src/pages/Community.jsx",
+          "client/src/pages/Dashboard.jsx",
+          "client/src/pages/GenerateImages.jsx",
+          "client/src/pages/Home.jsx",
+          "client/src/pages/Layout.jsx",
+          "client/src/pages/RemoveBackground.jsx",
+          "client/src/pages/RemoveObject.jsx",
+          "client/src/pages/ReviewResume.jsx",
+          "client/src/pages/WriteArticle.jsx"
+        ]
+      },
+      {
+        "name": "react-dom",
+        "used_by": [
+          "client/src/main.jsx"
+        ]
+      },
+      {
+        "name": "react-hot-toast",
+        "used_by": [
+          "client/src/App.jsx",
+          "client/src/pages/BlogTitles.jsx",
+          "client/src/pages/Community.jsx",
+          "client/src/pages/Dashboard.jsx",
+          "client/src/pages/GenerateImages.jsx",
+          "client/src/pages/RemoveBackground.jsx",
+          "client/src/pages/RemoveObject.jsx",
+          "client/src/pages/ReviewResume.jsx",
+          "client/src/pages/WriteArticle.jsx"
+        ]
+      },
+      {
+        "name": "react-markdown",
+        "used_by": [
+          "client/src/components/CreationItem.jsx",
+          "client/src/pages/BlogTitles.jsx",
+          "client/src/pages/ReviewResume.jsx",
+          "client/src/pages/WriteArticle.jsx"
+        ]
+      },
+      {
+        "name": "react-router-dom",
+        "used_by": [
+          "client/src/App.jsx",
+          "client/src/components/AiTools.jsx",
+          "client/src/components/Hero.jsx",
+          "client/src/components/Navbar.jsx",
+          "client/src/components/Sidebar.jsx",
+          "client/src/main.jsx",
+          "client/src/pages/Layout.jsx"
+        ]
+      },
+      {
+        "name": "vite",
+        "used_by": [
+          "client/vite.config.js"
+        ]
+      }
+    ],
+    "frontend_requests": [
+      {
+        "file": "client/src/pages/BlogTitles.jsx",
+        "method": "POST",
+        "endpoint": "/api/ai/generate-blog-title",
+        "client": "axios"
+      },
+      {
+        "file": "client/src/pages/Community.jsx",
+        "method": "GET",
+        "endpoint": "/api/user/get-published-creations",
+        "client": "axios"
+      },
+      {
+        "file": "client/src/pages/Community.jsx",
+        "method": "POST",
+        "endpoint": "/api/user/toggle-like-creation",
+        "client": "axios"
+      },
+      {
+        "file": "client/src/pages/Dashboard.jsx",
+        "method": "GET",
+        "endpoint": "/api/user/get-user-creations",
+        "client": "axios"
+      },
+      {
+        "file": "client/src/pages/GenerateImages.jsx",
+        "method": "POST",
+        "endpoint": "/api/ai/generate-image",
+        "client": "axios"
+      },
+      {
+        "file": "client/src/pages/RemoveBackground.jsx",
+        "method": "POST",
+        "endpoint": "/api/ai/remove-image-background",
+        "client": "axios"
+      },
+      {
+        "file": "client/src/pages/RemoveObject.jsx",
+        "method": "POST",
+        "endpoint": "/api/ai/remove-image-object",
+        "client": "axios"
+      },
+      {
+        "file": "client/src/pages/ReviewResume.jsx",
+        "method": "POST",
+        "endpoint": "/api/ai/resume-review",
+        "client": "axios"
+      },
+      {
+        "file": "client/src/pages/WriteArticle.jsx",
+        "method": "POST",
+        "endpoint": "/api/ai/generate-article",
+        "client": "axios"
+      }
+    ],
+    "external_api_calls": [
+      {
+        "file": "server/controllers/aiController.js",
+        "method": "POST",
+        "endpoint": "https://clipdrop-api.co/text-to-image/v1",
+        "service": "Clipdrop API",
+        "handler": "generateImage"
+      },
+      {
+        "file": "server/controllers/aiController.js",
+        "method": "POST",
+        "endpoint": "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-lite:generateContent",
+        "service": "Google Gemini API",
+        "handler": null
+      },
+      {
+        "file": "server/testGemini.js",
+        "method": "POST",
+        "endpoint": "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-lite:generateContent",
+        "service": "Google Gemini API",
+        "handler": null
+      }
+    ],
+    "backend_routes": [
+      {
+        "file": "server/routes/aiRoutes.js",
+        "method": "POST",
+        "endpoint": "/api/ai/generate-article",
+        "framework": "Express",
+        "handler": "generateArticle",
+        "controller_file": "server/controllers/aiController.js"
+      },
+      {
+        "file": "server/routes/aiRoutes.js",
+        "method": "POST",
+        "endpoint": "/api/ai/generate-blog-title",
+        "framework": "Express",
+        "handler": "generateBlogTitle",
+        "controller_file": "server/controllers/aiController.js"
+      },
+      {
+        "file": "server/routes/aiRoutes.js",
+        "method": "POST",
+        "endpoint": "/api/ai/generate-image",
+        "framework": "Express",
+        "handler": "generateImage",
+        "controller_file": "server/controllers/aiController.js"
+      },
+      {
+        "file": "server/routes/aiRoutes.js",
+        "method": "POST",
+        "endpoint": "/api/ai/remove-image-background",
+        "framework": "Express",
+        "handler": "removeImageBackground",
+        "controller_file": "server/controllers/aiController.js"
+      },
+      {
+        "file": "server/routes/aiRoutes.js",
+        "method": "POST",
+        "endpoint": "/api/ai/remove-image-object",
+        "framework": "Express",
+        "handler": "removeImageObject",
+        "controller_file": "server/controllers/aiController.js"
+      },
+      {
+        "file": "server/routes/aiRoutes.js",
+        "method": "POST",
+        "endpoint": "/api/ai/resume-review",
+        "framework": "Express",
+        "handler": "resumeReview",
+        "controller_file": "server/controllers/aiController.js"
+      },
+      {
+        "file": "server/routes/userRoutes.js",
+        "method": "GET",
+        "endpoint": "/api/user/get-user-creations",
+        "framework": "Express",
+        "handler": "getUserCreations",
+        "controller_file": "server/controllers/userController.js"
+      },
+      {
+        "file": "server/routes/userRoutes.js",
+        "method": "GET",
+        "endpoint": "/api/user/get-published-creations",
+        "framework": "Express",
+        "handler": "getPublishedCreations",
+        "controller_file": "server/controllers/userController.js"
+      },
+      {
+        "file": "server/routes/userRoutes.js",
+        "method": "POST",
+        "endpoint": "/api/user/toggle-like-creation",
+        "framework": "Express",
+        "handler": "toggleLikeCreation",
+        "controller_file": "server/controllers/userController.js"
+      },
+      {
+        "file": "server/server.js",
+        "method": "GET",
+        "endpoint": "/",
+        "framework": "Express",
+        "handler": null,
+        "controller_file": "server/server.js"
+      }
+    ],
+    "request_flows": [
+      {
+        "frontend_file": "client/src/pages/BlogTitles.jsx",
+        "backend_file": "server/routes/aiRoutes.js",
+        "controller_file": "server/controllers/aiController.js",
+        "method": "POST",
+        "endpoint": "/api/ai/generate-blog-title",
+        "handler": "generateBlogTitle",
+        "matched": true
+      },
+      {
+        "frontend_file": "client/src/pages/Community.jsx",
+        "backend_file": "server/routes/userRoutes.js",
+        "controller_file": "server/controllers/userController.js",
+        "method": "GET",
+        "endpoint": "/api/user/get-published-creations",
+        "handler": "getPublishedCreations",
+        "matched": true
+      },
+      {
+        "frontend_file": "client/src/pages/Community.jsx",
+        "backend_file": "server/routes/userRoutes.js",
+        "controller_file": "server/controllers/userController.js",
+        "method": "POST",
+        "endpoint": "/api/user/toggle-like-creation",
+        "handler": "toggleLikeCreation",
+        "matched": true
+      },
+      {
+        "frontend_file": "client/src/pages/Dashboard.jsx",
+        "backend_file": "server/routes/userRoutes.js",
+        "controller_file": "server/controllers/userController.js",
+        "method": "GET",
+        "endpoint": "/api/user/get-user-creations",
+        "handler": "getUserCreations",
+        "matched": true
+      },
+      {
+        "frontend_file": "client/src/pages/GenerateImages.jsx",
+        "backend_file": "server/routes/aiRoutes.js",
+        "controller_file": "server/controllers/aiController.js",
+        "method": "POST",
+        "endpoint": "/api/ai/generate-image",
+        "handler": "generateImage",
+        "matched": true
+      },
+      {
+        "frontend_file": "client/src/pages/RemoveBackground.jsx",
+        "backend_file": "server/routes/aiRoutes.js",
+        "controller_file": "server/controllers/aiController.js",
+        "method": "POST",
+        "endpoint": "/api/ai/remove-image-background",
+        "handler": "removeImageBackground",
+        "matched": true
+      },
+      {
+        "frontend_file": "client/src/pages/RemoveObject.jsx",
+        "backend_file": "server/routes/aiRoutes.js",
+        "controller_file": "server/controllers/aiController.js",
+        "method": "POST",
+        "endpoint": "/api/ai/remove-image-object",
+        "handler": "removeImageObject",
+        "matched": true
+      },
+      {
+        "frontend_file": "client/src/pages/ReviewResume.jsx",
+        "backend_file": "server/routes/aiRoutes.js",
+        "controller_file": "server/controllers/aiController.js",
+        "method": "POST",
+        "endpoint": "/api/ai/resume-review",
+        "handler": "resumeReview",
+        "matched": true
+      },
+      {
+        "frontend_file": "client/src/pages/WriteArticle.jsx",
+        "backend_file": "server/routes/aiRoutes.js",
+        "controller_file": "server/controllers/aiController.js",
+        "method": "POST",
+        "endpoint": "/api/ai/generate-article",
+        "handler": "generateArticle",
+        "matched": true
+      }
+    ],
+    "data_connections": [
+      {
+        "file": "server/configs/db.js",
+        "technology": "PostgreSQL",
+        "connection_type": "data-layer"
+      }
+    ],
+    "end_to_end_flows": [
+      {
+        "frontend_file": "client/src/pages/BlogTitles.jsx",
+        "method": "POST",
+        "endpoint": "/api/ai/generate-blog-title",
+        "route_file": "server/routes/aiRoutes.js",
+        "controller_file": "server/controllers/aiController.js",
+        "handler": "generateBlogTitle",
+        "external_services": [],
+        "data_technologies": [
+          "PostgreSQL"
+        ]
+      },
+      {
+        "frontend_file": "client/src/pages/Community.jsx",
+        "method": "GET",
+        "endpoint": "/api/user/get-published-creations",
+        "route_file": "server/routes/userRoutes.js",
+        "controller_file": "server/controllers/userController.js",
+        "handler": "getPublishedCreations",
+        "external_services": [],
+        "data_technologies": [
+          "PostgreSQL"
+        ]
+      },
+      {
+        "frontend_file": "client/src/pages/Community.jsx",
+        "method": "POST",
+        "endpoint": "/api/user/toggle-like-creation",
+        "route_file": "server/routes/userRoutes.js",
+        "controller_file": "server/controllers/userController.js",
+        "handler": "toggleLikeCreation",
+        "external_services": [],
+        "data_technologies": [
+          "PostgreSQL"
+        ]
+      },
+      {
+        "frontend_file": "client/src/pages/Dashboard.jsx",
+        "method": "GET",
+        "endpoint": "/api/user/get-user-creations",
+        "route_file": "server/routes/userRoutes.js",
+        "controller_file": "server/controllers/userController.js",
+        "handler": "getUserCreations",
+        "external_services": [],
+        "data_technologies": [
+          "PostgreSQL"
+        ]
+      },
+      {
+        "frontend_file": "client/src/pages/GenerateImages.jsx",
+        "method": "POST",
+        "endpoint": "/api/ai/generate-image",
+        "route_file": "server/routes/aiRoutes.js",
+        "controller_file": "server/controllers/aiController.js",
+        "handler": "generateImage",
+        "external_services": [
+          "Clipdrop API"
+        ],
+        "data_technologies": [
+          "PostgreSQL"
+        ]
+      },
+      {
+        "frontend_file": "client/src/pages/RemoveBackground.jsx",
+        "method": "POST",
+        "endpoint": "/api/ai/remove-image-background",
+        "route_file": "server/routes/aiRoutes.js",
+        "controller_file": "server/controllers/aiController.js",
+        "handler": "removeImageBackground",
+        "external_services": [],
+        "data_technologies": [
+          "PostgreSQL"
+        ]
+      },
+      {
+        "frontend_file": "client/src/pages/RemoveObject.jsx",
+        "method": "POST",
+        "endpoint": "/api/ai/remove-image-object",
+        "route_file": "server/routes/aiRoutes.js",
+        "controller_file": "server/controllers/aiController.js",
+        "handler": "removeImageObject",
+        "external_services": [],
+        "data_technologies": [
+          "PostgreSQL"
+        ]
+      },
+      {
+        "frontend_file": "client/src/pages/ReviewResume.jsx",
+        "method": "POST",
+        "endpoint": "/api/ai/resume-review",
+        "route_file": "server/routes/aiRoutes.js",
+        "controller_file": "server/controllers/aiController.js",
+        "handler": "resumeReview",
+        "external_services": [],
+        "data_technologies": [
+          "PostgreSQL"
+        ]
+      },
+      {
+        "frontend_file": "client/src/pages/WriteArticle.jsx",
+        "method": "POST",
+        "endpoint": "/api/ai/generate-article",
+        "route_file": "server/routes/aiRoutes.js",
+        "controller_file": "server/controllers/aiController.js",
+        "handler": "generateArticle",
+        "external_services": [],
+        "data_technologies": [
+          "PostgreSQL"
+        ]
+      }
+    ],
+    "node_count": 34,
+    "edge_count": 38
+  }
+}

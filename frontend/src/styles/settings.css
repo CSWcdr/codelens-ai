@@ -1,0 +1,624 @@
+/* =========================================================
+   SETTINGS OVERLAY
+   ========================================================= */
+
+   .settings-overlay {
+    position: fixed;
+  
+    inset: 0;
+  
+    z-index: 3000;
+  
+    padding: 24px;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    background:
+      rgba(0, 0, 0, 0.68);
+  
+    backdrop-filter:
+      blur(7px);
+  
+    -webkit-backdrop-filter:
+      blur(7px);
+  
+    animation:
+      settingsFadeIn
+      0.2s ease;
+  }
+  
+  @keyframes settingsFadeIn {
+    from {
+      opacity: 0;
+    }
+  
+    to {
+      opacity: 1;
+    }
+  }
+  
+  /* =========================================================
+     MODAL
+     ========================================================= */
+  
+  .settings-modal {
+    width: 100%;
+    max-width: 620px;
+  
+    max-height:
+      calc(100vh - 48px);
+  
+    overflow: hidden;
+  
+    display: flex;
+    flex-direction: column;
+  
+    border:
+      1px solid #272c37;
+  
+    border-radius: 16px;
+  
+    background:
+      #0d1016;
+  
+    box-shadow:
+      0 35px 100px
+      rgba(0, 0, 0, 0.55);
+  
+    animation:
+      settingsModalEnter
+      0.23s ease;
+  }
+  
+  @keyframes settingsModalEnter {
+    from {
+      opacity: 0;
+  
+      transform:
+        translateY(10px)
+        scale(0.985);
+    }
+  
+    to {
+      opacity: 1;
+  
+      transform:
+        translateY(0)
+        scale(1);
+    }
+  }
+  
+  /* =========================================================
+     HEADER
+     ========================================================= */
+  
+  .settings-header {
+    min-height: 76px;
+  
+    padding:
+      17px 20px;
+  
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  
+    gap: 20px;
+  
+    border-bottom:
+      1px solid #20242d;
+  
+    background:
+      #0f1218;
+  }
+  
+  .settings-header > div:first-child {
+    min-width: 0;
+  
+    display: flex;
+    align-items: center;
+  
+    gap: 12px;
+  }
+  
+  .settings-header-icon {
+    width: 38px;
+    height: 38px;
+  
+    flex-shrink: 0;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    border-radius: 9px;
+  
+    color: #9a87ff;
+  
+    background:
+      rgba(
+        117,
+        87,
+        255,
+        0.1
+      );
+  }
+  
+  .settings-header h2 {
+    margin: 0;
+  
+    color: #f1f2f6;
+  
+    font-size: 16px;
+  }
+  
+  .settings-header p {
+    margin-top: 3px;
+  
+    color: #666d79;
+  
+    font-size: 9px;
+  }
+  
+  .settings-close {
+    width: 35px;
+    height: 35px;
+  
+    flex-shrink: 0;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    border:
+      1px solid #292e39;
+  
+    border-radius: 8px;
+  
+    color: #7c8390;
+  
+    background:
+      #12151b;
+  
+    cursor: pointer;
+  
+    transition:
+      0.2s ease;
+  }
+  
+  .settings-close:hover {
+    color: #ffffff;
+  
+    border-color:
+      #3e4450;
+  
+    background:
+      #171b22;
+  }
+  
+  /* =========================================================
+     BODY
+     ========================================================= */
+  
+  .settings-body {
+    padding: 20px;
+  
+    overflow-y: auto;
+  
+    display: flex;
+    flex-direction: column;
+  
+    gap: 22px;
+  }
+  
+  .settings-section {
+    display: flex;
+    flex-direction: column;
+  
+    gap: 12px;
+  }
+  
+  .settings-section-title {
+    display: flex;
+    align-items: flex-start;
+  
+    gap: 9px;
+  
+    color: #8f7fff;
+  }
+  
+  .settings-section-title > svg {
+    margin-top: 1px;
+  
+    flex-shrink: 0;
+  }
+  
+  .settings-section-title > div {
+    display: flex;
+    flex-direction: column;
+  
+    gap: 3px;
+  }
+  
+  .settings-section-title strong {
+    color: #d7dae2;
+  
+    font-size: 11px;
+  }
+  
+  .settings-section-title span {
+    color: #5e6571;
+  
+    font-size: 9px;
+  }
+  
+  /* =========================================================
+     REPOSITORY CARD
+     ========================================================= */
+  
+  .settings-repository-card {
+    overflow: hidden;
+  
+    border:
+      1px solid #242933;
+  
+    border-radius: 10px;
+  
+    background:
+      #11141a;
+  }
+  
+  .settings-repository-card > div {
+    min-height: 57px;
+  
+    padding:
+      12px 14px;
+  
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  
+    gap: 18px;
+  
+    border-bottom:
+      1px solid #20242d;
+  }
+  
+  .settings-repository-card > div:last-child {
+    border-bottom: none;
+  }
+  
+  .settings-repository-card > div > span {
+    color: #6d7480;
+  
+    font-size: 9px;
+  }
+  
+  .settings-repository-card strong {
+    min-width: 0;
+  
+    overflow: hidden;
+  
+    color: #d8dbe2;
+  
+    font-size: 10px;
+  
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  
+  .settings-repository-card a {
+    display: flex;
+    align-items: center;
+  
+    gap: 6px;
+  
+    color: #9c8cff;
+  
+    text-decoration: none;
+  
+    font-size: 9px;
+  }
+  
+  .settings-repository-card a:hover {
+    color: #b5a9ff;
+  }
+  
+  /* =========================================================
+     OPTIONS
+     ========================================================= */
+  
+  .settings-option-card,
+  .settings-danger-card {
+    min-height: 70px;
+  
+    padding: 14px;
+  
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  
+    gap: 20px;
+  
+    border:
+      1px solid #242933;
+  
+    border-radius: 10px;
+  
+    background:
+      #11141a;
+  }
+  
+  .settings-option-card > div:first-child,
+  .settings-danger-card > div:first-child {
+    min-width: 0;
+  
+    display: flex;
+    flex-direction: column;
+  
+    gap: 4px;
+  }
+  
+  .settings-option-card strong,
+  .settings-danger-card strong {
+    color: #d5d8df;
+  
+    font-size: 10px;
+  }
+  
+  .settings-option-card span,
+  .settings-danger-card span {
+    max-width: 390px;
+  
+    color: #666d79;
+  
+    font-size: 9px;
+    line-height: 1.5;
+  }
+  
+  .settings-pill {
+    flex-shrink: 0;
+  
+    padding: 5px 8px;
+  
+    border:
+      1px solid #2d323e;
+  
+    border-radius: 999px;
+  
+    color: #858b98;
+  
+    background:
+      #151920;
+  
+    font-size: 8px;
+  }
+  
+  .settings-pill.active {
+    color: #60d69e;
+  
+    border-color:
+      rgba(
+        87,
+        213,
+        157,
+        0.2
+      );
+  
+    background:
+      rgba(
+        87,
+        213,
+        157,
+        0.06
+      );
+  }
+  
+  /* =========================================================
+     DANGER
+     ========================================================= */
+  
+  .danger-section
+  .settings-section-title {
+    color: #d97979;
+  }
+  
+  .settings-danger-card {
+    border-color:
+      rgba(
+        210,
+        87,
+        87,
+        0.16
+      );
+  
+    background:
+      rgba(
+        175,
+        62,
+        62,
+        0.035
+      );
+  }
+  
+  .settings-danger-card button {
+    flex-shrink: 0;
+  
+    padding:
+      8px 11px;
+  
+    border:
+      1px solid
+      rgba(
+        218,
+        89,
+        89,
+        0.3
+      );
+  
+    border-radius: 7px;
+  
+    color: #dc8888;
+  
+    background:
+      rgba(
+        218,
+        89,
+        89,
+        0.06
+      );
+  
+    cursor: pointer;
+  
+    font-size: 9px;
+  
+    transition:
+      0.2s ease;
+  }
+  
+  .settings-danger-card button:hover:not(:disabled) {
+    color: #ffabab;
+  
+    border-color:
+      rgba(
+        218,
+        89,
+        89,
+        0.5
+      );
+  
+    background:
+      rgba(
+        218,
+        89,
+        89,
+        0.11
+      );
+  }
+  
+  .settings-danger-card button:disabled {
+    opacity: 0.35;
+  
+    cursor: not-allowed;
+  }
+  
+  /* =========================================================
+     FOOTER
+     ========================================================= */
+  
+  .settings-footer {
+    min-height: 62px;
+  
+    padding:
+      0 20px;
+  
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  
+    gap: 20px;
+  
+    border-top:
+      1px solid #20242d;
+  
+    background:
+      #0f1218;
+  }
+  
+  .settings-footer span {
+    color: #4f5662;
+  
+    font-size: 8px;
+  }
+  
+  .settings-footer button {
+    padding:
+      8px 16px;
+  
+    border: none;
+    border-radius: 7px;
+  
+    color: #ffffff;
+  
+    background:
+      linear-gradient(
+        135deg,
+        #7658ff,
+        #4f8cff
+      );
+  
+    cursor: pointer;
+  
+    font-size: 9px;
+  
+    transition:
+      0.2s ease;
+  }
+  
+  .settings-footer button:hover {
+    transform:
+      translateY(-1px);
+  
+    box-shadow:
+      0 6px 18px
+      rgba(
+        100,
+        82,
+        255,
+        0.22
+      );
+  }
+  
+  /* =========================================================
+     MOBILE
+     ========================================================= */
+  
+  @media (max-width: 600px) {
+    .settings-overlay {
+      padding: 12px;
+    }
+  
+    .settings-modal {
+      max-height:
+        calc(
+          100vh - 24px
+        );
+    }
+  
+    .settings-header {
+      padding:
+        15px;
+    }
+  
+    .settings-body {
+      padding:
+        16px;
+    }
+  
+    .settings-repository-card > div {
+      align-items: flex-start;
+  
+      flex-direction: column;
+  
+      gap: 7px;
+    }
+  
+    .settings-option-card,
+    .settings-danger-card {
+      align-items: flex-start;
+  
+      flex-direction: column;
+  
+      gap: 12px;
+    }
+  
+    .settings-danger-card button {
+      width: 100%;
+    }
+  
+    .settings-footer {
+      padding:
+        0 16px;
+    }
+  }
