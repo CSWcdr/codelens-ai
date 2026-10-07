@@ -1,3 +1,4 @@
+import os
 import sqlite3
 
 from datetime import (
@@ -22,8 +23,16 @@ BASE_DIRECTORY = (
 )
 
 
+STORAGE_DIRECTORY = Path(
+    os.getenv(
+        "CODELENS_STORAGE_DIR",
+        str(BASE_DIRECTORY),
+    )
+)
+
+
 DATABASE_DIRECTORY = (
-    BASE_DIRECTORY
+    STORAGE_DIRECTORY
     / "data"
 )
 

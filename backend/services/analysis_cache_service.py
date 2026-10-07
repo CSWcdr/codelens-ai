@@ -1,6 +1,8 @@
 import hashlib
 import json
 
+import os
+
 from datetime import (
     datetime,
     timezone,
@@ -25,11 +27,24 @@ from services.github_service import (
 # CACHE CONFIG
 # =========================================================
 
-CACHE_DIRECTORY = (
+BASE_DIRECTORY = (
     Path(__file__)
     .resolve()
     .parent
     .parent
+)
+
+
+STORAGE_DIRECTORY = Path(
+    os.getenv(
+        "CODELENS_STORAGE_DIR",
+        str(BASE_DIRECTORY),
+    )
+)
+
+
+CACHE_DIRECTORY = (
+    STORAGE_DIRECTORY
     / "analysis_cache"
 )
 

@@ -28,12 +28,31 @@ load_dotenv()
 # CHROMA
 # =========================================================
 
-CHROMA_PATH = (
+BASE_DIRECTORY = (
     Path(__file__)
     .resolve()
     .parent
     .parent
+)
+
+
+STORAGE_DIRECTORY = Path(
+    os.getenv(
+        "CODELENS_STORAGE_DIR",
+        str(BASE_DIRECTORY),
+    )
+)
+
+
+CHROMA_PATH = (
+    STORAGE_DIRECTORY
     / "chroma_db"
+)
+
+
+CHROMA_PATH.mkdir(
+    parents=True,
+    exist_ok=True,
 )
 
 
